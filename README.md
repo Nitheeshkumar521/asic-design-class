@@ -38,6 +38,4 @@ image which describes about the commands
 
 5) We got 12 instructions(byte adressing) in the main section (adress 100bo)
 
-![img7lab2](https://github.com/user-attachments/assets/3b0346df-4efb-4103-a131-a270f32e3ba5)
-
-
+![img6lab2](https://github.com/user-attachments/assets/3a3c8018-28fa-4629-b4c8-d561402dbbbb)
