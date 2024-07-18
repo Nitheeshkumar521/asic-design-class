@@ -14,5 +14,7 @@ Image will show about the commands used and output of sum1ton
 
 ![image2lab1](https://github.com/user-attachments/assets/c247d982-e748-4ed9-9ed5-bcae0e249202)
 
+## LAB 2 - 
+
 
 
