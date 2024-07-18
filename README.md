@@ -4,3 +4,5 @@
 
 Write a C program in text editor as sum 1 to n 
 
+https://github.com/Nitheeshkumar521/asic-design-class/issues/1
+
