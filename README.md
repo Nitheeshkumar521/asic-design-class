@@ -14,7 +14,28 @@ Image will show about the commands used and output of sum1ton
 
 ![image2lab1](https://github.com/user-attachments/assets/c247d982-e748-4ed9-9ed5-bcae0e249202)
 
-## LAB 2 - 
+## LAB 2 - Compiling Lab1(sum 1 to n) C program with RISCV Compiler
+
+1) We will run lab 1 program using RISCV Gcc compiler
 
 
+![image1lab2](https://github.com/user-attachments/assets/44bf2daf-6c83-4f52-86ad-afb83a292f7c)
 
+2) Here in the a new tab we will check the assembly code for C program we Run
+
+![img2lab2](https://github.com/user-attachments/assets/efbf3991-7c28-458f-a259-81e4cd018f7c)
+
+3) Here we went to the "main" when I calculted using calculator got (35)dec and (23)hex 
+
+
+![img3lab2](https://github.com/user-attachments/assets/d5ab9bb2-d94f-4b70-8e69-0277e7e2aabd)
+
+4) Hence now we will use Ofast on the RISCV compiler and we will use the same C code 
+image which describes about the commands
+
+
+![img5lab2](https://github.com/user-attachments/assets/816cc5e4-374e-4de9-95da-b0ec6eb3158c)
+
+5) We got 12 instructions(byte adressing) in the main section (adress 100bo)
+
+![img7lab2](https://github.com/user-attachments/assets/3b0346df-4efb-4103-a131-a270f32e3ba5)
