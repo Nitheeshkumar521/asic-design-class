@@ -6,7 +6,7 @@
 
 Following image will show about the image of the C program 
 
-https://github.com/Nitheeshkumar521/asic-design-class/issues/1
+
 
 2) - Compile the code using GCC compiler and run the code to see the output
 
