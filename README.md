@@ -21,12 +21,9 @@ Image will show about the commands used and output of sum1ton
 
 ![image1lab2](https://github.com/user-attachments/assets/44bf2daf-6c83-4f52-86ad-afb83a292f7c)
 
-2) Here in the a new tab we will check the assembly code for C program we Run
+2)In a new tab we will check the assembly code for C program we Run
 
-![img2lab2](https://github.com/user-attachments/assets/efbf3991-7c28-458f-a259-81e4cd018f7c)
-
-3) Here we went to the "main" when I calculted using calculator got (35)dec and (23)hex 
-
+Here we went to the "main"  when I calculted using calculator got (35)dec and (23)hex 
 
 ![img3lab2](https://github.com/user-attachments/assets/d5ab9bb2-d94f-4b70-8e69-0277e7e2aabd)
 
