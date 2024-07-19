@@ -1,0 +1,26 @@
+# used commands in lab1
+1)cd
+
+2)leafpad sum1ton.c &
+
+3)program
+
+4)for output ./a.out
+
+# lab2
+
+1)cat sum1ton.c
+
+2)riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+   ls-ltr sum1ton.o
+
+3) main section 
+   calculator to calculate noof adresses(byte adresseble) 
+   (10210hex - 10184hex)/4hex
+
+4)  Ofast
+
+   riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+   riscv64-unknown-elf-objdump -d sum1ton.o | less
