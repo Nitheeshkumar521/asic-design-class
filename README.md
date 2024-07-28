@@ -36,3 +36,12 @@ image which describes about the commands
 5) We got 12 instructions(byte adressing) in the main section (adress 100bo)
 
 ![img6lab2](https://github.com/user-attachments/assets/3a3c8018-28fa-4629-b4c8-d561402dbbbb)
+
+6) RISCV compilation output
+ Code Compilation using RISC-V GCC compiler with a different optimization flag (Ofast)
+we will compile the code with compiler flag set as -Ofast and then we will check the assembly code again
+![lab 2 8](https://github.com/user-attachments/assets/9d590d74-02ef-4005-887b-16107e7326a1)
+![lab 2 9](https://github.com/user-attachments/assets/f882ce66-3843-4c09-81e2-ae3fef84b769)
+
+
+
