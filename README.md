@@ -174,9 +174,10 @@ Dec value
 | LW r03, r01, 2  | I    | 000000000010 00001 010 00011 0000011       | 00000000001000001010000010000011 | 0x00010283 |
 | SLL r05, r01, r1| R    | 0000000 00001 00001 001 00101 0110011       | 00000000001000001001000100110011 | 0x00024033 |
 
+# TASK 5
 
-
-
+## Using above RISC-V Core Verilog netlist and testbench in functional test bench simulation experiment
+### We are running this code with gtkwave and icarur
 
 
 
