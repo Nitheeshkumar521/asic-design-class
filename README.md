@@ -177,7 +177,68 @@ Dec value
 # TASK 5
 
 ## Using above RISC-V Core Verilog netlist and testbench in functional test bench simulation experiment
+
 ### We are running this code with gtkwave and icarur
+
+## Identifying Instruction Types
+### Given hardcoded instructions are:
+![Screenshot 2024-08-11 075657](https://github.com/user-attachments/assets/6d197141-d9a4-441d-ace5-03172e2eb743)
+
+## 1.ADD r6,r1,r2
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 082834](https://github.com/user-attachments/assets/6e7014b7-ef69-4cf4-bd6c-67397bc244d9)
+
+
+## 2. SUB r7,r1,r2
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 083019](https://github.com/user-attachments/assets/d71d659f-5391-40ac-aec7-2f2c9d97405e)
+
+
+## 3.AND r8.r1,r3
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084628](https://github.com/user-attachments/assets/d691dd2a-43d8-4990-a62b-cc664986a137)
+
+
+## 4.OR r9,r2,r5
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084710](https://github.com/user-attachments/assets/90538f99-6a2b-4298-9531-89e6e7ac6799)
+
+
+## 5. XOR r10,r1,r4
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084741](https://github.com/user-attachments/assets/e2090eb6-f21e-4414-b197-2b0474fa0905)
+
+
+## 6.SLT r1,r2,r4
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084816](https://github.com/user-attachments/assets/65b70148-9075-4c1d-972a-008e43f6c157)
+
+
+## 7. ADDI r12,r4,5
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084857](https://github.com/user-attachments/assets/7006f8f1-523c-40b9-89ca-fa6b4ca7d4c6)
+
+
+## 8. SW r3,r1,2
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 084929](https://github.com/user-attachments/assets/41241c69-8082-4cb7-9d4e-0f6c14a4ed53)
+
+
+## 9. LW r13,r01,2
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 085008](https://github.com/user-attachments/assets/25012151-20a2-4f8e-948d-ee1c78177995)
+
+
+## 10. BEQ r0,r0,15
+### Waveform of the hardcopy verilog program:
+![Screenshot 2024-08-11 085036](https://github.com/user-attachments/assets/aeef1ad0-fa57-4f88-abd0-c94205e6ae5e)
+
+
+## WAVEFORM OF OUR VERILOG PROGRAM:
+
+### B. Given instructions of our verilog program:
+
+
 
 
 
