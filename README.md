@@ -238,6 +238,126 @@ Dec value
 
 ### B. Given instructions of our verilog program:
 
+![Screenshot 2024-08-11 183414](https://github.com/user-attachments/assets/5ab5d1be-dea6-4a08-baed-a9d03f67b48c)
+
+
+## 1.ADD r0,r1,r2
+### Operation : 32'h00028233
+
+### Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 192846](https://github.com/user-attachments/assets/bf709913-37ef-405a-8768-46b4a4962813)
+
+
+## 2.SUB r2,r0,r1
+### Operation : 32'h40028033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193033](https://github.com/user-attachments/assets/5316ea1e-558a-4241-95bd-504d9e0f6a7e)
+
+
+
+## 3.AND r1,r0,r2
+### Operation : 32'h0000f033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193117](https://github.com/user-attachments/assets/678aa3e5-ae6a-47cf-b624-c804c4abc7c1)
+
+
+
+## 4.OR r8,r1,r5
+### Operation : 32'h0002e433
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193201](https://github.com/user-attachments/assets/db184882-104d-49c3-aac1-1c645f1d8427)
+
+
+
+## 5.XOR r8,r0,r4
+### Operation : 32'h00029033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193253](https://github.com/user-attachments/assets/9575ff37-fad1-4b5b-aa11-f6b3e543192f)
+
+
+
+## 6.SLT r00,r1,r4
+### Operation : 32'h0002a033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193335](https://github.com/user-attachments/assets/f9b9d378-fa64-43d0-a701-fcb343df9300)
+
+
+
+## 7.ADDI r02,r2,5
+### Operation : 32'h0002a013
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193702](https://github.com/user-attachments/assets/2a43e88a-cd76-4626-b2bc-35f7b63c56ce)
+
+
+
+## 8.SW r2,r0,4
+### Operation : 32'h00008023
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193746](https://github.com/user-attachments/assets/bdabce01-5d47-4ebf-a2b7-a62d0bf288f1)
+
+
+## 9.SRL r06,r01,r1
+### Operation : 32'h0002a033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 193829](https://github.com/user-attachments/assets/5df9f65b-61f3-4c29-a8b0-90e27a8d3af9)
+
+
+
+## 10.BNE r0,r0,20
+### Operation : 32'h00014063
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 194255](https://github.com/user-attachments/assets/152134ba-99cf-4f41-9033-79f86bfff034)
+
+
+
+
+## 11.BEQ r0,r0,15
+### Operation : 32'h000c063
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 194945](https://github.com/user-attachments/assets/abd35b41-1a77-4300-b721-bd37b5164080)
+
+
+
+
+
+## 12.LW r03,r01,2
+### Operation : 32'h00010283
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 195401](https://github.com/user-attachments/assets/c4c916a7-76d2-4358-ac4a-cc2af198c399)
+
+
+
+
+## 13.SLL r05,r01,r1
+### Operation : 32'h00024033
+
+###  Waveform of the given hardcopy verilog program:
+
+![Screenshot 2024-08-11 195522](https://github.com/user-attachments/assets/add734e3-cf7f-4045-a533-bef34491bdf8)
+
 
 
 
