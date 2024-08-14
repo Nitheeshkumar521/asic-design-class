@@ -394,7 +394,35 @@ Dec value
 
 ![Screenshot 2024-08-11 195522](https://github.com/user-attachments/assets/add734e3-cf7f-4045-a533-bef34491bdf8)
 
+# Task 5 : Create a C program for Parity checker. Execute same C program in GCC and RISC-V GCC compiler.
 
+## Code for Parity checker
+```
+
+#include <stdio.h>
+
+// Function to check the parity of a number
+void check_parity(int number) {
+    if (number & 1) {
+        printf("The number %d has odd parity.\n", number);
+    } else {
+        printf("The number %d has even parity.\n", number);
+    }
+}
+
+int main() {
+    int number;
+
+    // Prompt the user to enter a number
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Check and print the parity
+    check_parity(number);
+
+    return 0;
+}
+```
 
 
 
