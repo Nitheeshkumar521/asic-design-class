@@ -437,6 +437,15 @@ output of the parity checker C program using RISCV GCC compiler
 
 Hence,we got same output for both GCC and RISCV compilers.
 
+## Assembly insturctions for the main function RISC-V compiler using O1 flag:
+![Screenshot 2024-08-14 161420](https://github.com/user-attachments/assets/0392e97c-c056-4b45-9eeb-4172df236c2e)
+
+
+## Assembly instructions for the main function using RISC-V compiler using Ofast Flag:
+![Screenshot 2024-08-14 112431](https://github.com/user-attachments/assets/dba7aae2-b8dd-42a8-acf9-a0bd4e3e7962)
+
+
+
 
 
 
