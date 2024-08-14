@@ -424,6 +424,16 @@ int main() {
 }
 ```
 
+## Output for Parity Checker program in from GCC Compiler:
+
+![Screenshot 2024-08-14 102656](https://github.com/user-attachments/assets/4d185a68-c002-4bcb-8b3c-5ecbc558efc3)
+![Screenshot 2024-08-14 102900](https://github.com/user-attachments/assets/9eeaa073-1379-4d82-8e91-06a3385d1eb9)
+![Screenshot 2024-08-14 102912](https://github.com/user-attachments/assets/0d5dc790-c405-42c0-8b43-182f0742de83)
+
+
+
+
+
 
 
 
