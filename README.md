@@ -430,6 +430,16 @@ int main() {
 ![Screenshot 2024-08-14 102900](https://github.com/user-attachments/assets/9eeaa073-1379-4d82-8e91-06a3385d1eb9)
 ![Screenshot 2024-08-14 102912](https://github.com/user-attachments/assets/0d5dc790-c405-42c0-8b43-182f0742de83)
 
+## Output for the Parity checker from RISC-V GCC compiler:
+output of the parity checker C program using RISCV GCC compiler
+![Screenshot 2024-08-14 104839](https://github.com/user-attachments/assets/faf8048b-c905-4abe-a22d-5bc81dcec46d)
+![Screenshot 2024-08-14 104910](https://github.com/user-attachments/assets/a7445a1c-3dd3-49b9-837b-bb7828c411e0)
+
+Hence,we got same output for both GCC and RISCV compilers.
+
+
+
+
 
 
 
