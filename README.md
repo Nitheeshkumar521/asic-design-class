@@ -448,6 +448,19 @@ Hence,we got same output for both GCC and RISCV compilers.
 ## Assembly instructions for the main function using RISC-V compiler using Ofast Flag:
 ![Screenshot 2024-08-14 112431](https://github.com/user-attachments/assets/dba7aae2-b8dd-42a8-acf9-a0bd4e3e7962)
 
+# Task 6 : Digital Logic with TL-Verilog and Maker chip
+ In this particular Task we will use Makerchip where we can design and stimulation of digital ciruits using TL verilog,
+ with out installing any additional software.
+ 
+### TL-Verilog:
+It is modern hardware description language designed to simplify and accelerate digital design by reducing complicity we were facing in verilog and VHDL.
+
+## Building Combinational Circuit for Caluculator in Makerchip:
+
+Code for Caluc
+
+    
+
 
 
 
