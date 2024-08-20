@@ -456,8 +456,11 @@ Hence,we got same output for both GCC and RISCV compilers.
 It is modern hardware description language designed to simplify and accelerate digital design by reducing complicity we were facing in verilog and VHDL.
 
 ## Building Combinational Circuit for Caluculator in Makerchip:
+A combinational calculator using TL verilog code on Makerchip.
+Screenshot of the implementation of the basic combinational circuit in makerchip.
+![Screenshot 2024-08-20 151457](https://github.com/user-attachments/assets/694eceae-fc93-43cf-88c2-c4cc2d7a13e7)
 
-Code for Caluc
+
 
     
 
