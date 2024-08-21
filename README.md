@@ -735,6 +735,9 @@ code for the above lab
          $rf_wr_index[4:0] = $rd;
          $rf_wr_data[31:0] = $rd == 0 ? 0 : $result;
 ```
+Screen shot below shows about  Register read, ALU operation on ADD,ADDI,Register file write
+![Screenshot 2024-08-21 201900](https://github.com/user-attachments/assets/a61fb971-cac7-42f6-ae97-3e83db4aec27)
+
 ### d) Lab for Implementing Branch Instructions:
 code for the above lab
 ```
@@ -753,7 +756,7 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 *passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9) ;
 ```
 
-### Screen shot for the STEP 3 RISC-V control logic:
+### Screen shot for the implementation of the branch logic and overall  STEP 3 RISC-V control logic:
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/a8939c66-f851-4f89-ac1d-9d3b7ccf6b52">
 
 # DAY 5 - Complete Pipelined RISC-V CPU micro Architecture:
