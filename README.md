@@ -448,28 +448,28 @@ Hence,we got same output for both GCC and RISCV compilers.
 ## Assembly instructions for the main function using RISC-V compiler using Ofast Flag:
 ![Screenshot 2024-08-14 112431](https://github.com/user-attachments/assets/dba7aae2-b8dd-42a8-acf9-a0bd4e3e7962)
 
-# Task 6 : Digital Logic with TL-Verilog and Maker chip
+# Task 6 : DAY3 Digital Logic with TL-Verilog and Maker chip
  In this particular Task we will use Makerchip where we can design and stimulation of digital ciruits using TL verilog,
  with out installing any additional software.
  
 ### TL-Verilog:
 It is modern hardware description language designed to simplify and accelerate digital design by reducing complicity we were facing in verilog and VHDL.
 
-## Building Combinational Circuit for Caluculator in Makerchip:
+## STEP1  Building Combinational Circuit for Caluculator in Makerchip:
 
 ### Lab on Combinational Logic:
 A combinational calculator using TL verilog code on Makerchip.
 Screenshot of the implementation of the basic combinational circuit in makerchip.
 ![Screenshot 2024-08-21 050404](https://github.com/user-attachments/assets/4b5a36dd-f2e7-4cc1-bea3-e6f0acca2af1)
 
-## Sequential Logic:
+## STEP2  Sequential Logic:
 
 ### Sequential Calculator Lab:
 
 Screenshot of the implementation of Sequential Calculator on makerchip.
 ![Screenshot 2024-08-20 150204](https://github.com/user-attachments/assets/d41e3f10-6190-46f9-bfb2-7ff89506f3d4)
 
-## Pipelined Logic:
+## STEP3  Pipelined Logic:
 
 It is a technique used in digital system design to improve the efficiency of the process by dividing complex tasks into smaller and sequential stages. Every stage performs a specific operation on the data and these stages are arranged in a pipeline. In a pipeline architecture, the processing of an instruction is divided into several stages. This allows for overlapping the execution of multiple instructions, reducing the overall time needed to complete a sequential of tasks.
 Hence, circuit can be operated in higher frequencies.
@@ -477,18 +477,18 @@ Hence, circuit can be operated in higher frequencies.
 Screen shot shows the implementation of the pipelined logic in makerchip.
 ![Screenshot 2024-08-21 053824](https://github.com/user-attachments/assets/6be4b738-55a2-40b4-bff2-14e5bc6a0b2f)
 
-## Validity:
+## STEP4   Validity:
 
 
 Validity is used to track the state and timing of transactions within a design description. In TL-verilog transactions are used to represent higher level actions that occur in a design. Validity refers to whether a transaction is considered valid or invalid based on its state.
 Validity provides easier debug,cleaner design , error checking , automated clock.
 
-### Lab on 2-Cycle calculator with validity:
+### a) Lab on 2-Cycle calculator with validity:
 
 Below is the screen shot of the 2-cycle calculator with validity:
 ![Screenshot 2024-08-21 064245](https://github.com/user-attachments/assets/149aeb0c-45c0-450a-8eca-9a69c09bacde)
 
-## Lab on 2-Cycle Calculator with Single valued memory:
+### b) Lab on 2-Cycle Calculator with Single valued memory:
 
 TL verilog code:
 ```
@@ -529,7 +529,7 @@ Below is the screenshot of the implementation of code in makerchip
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/77f699e4-d3d0-422c-8c3d-6f5b69e3a5a3">
 
 
-# Task 6 Basic RISC-V CPU Micro-Architecture:
+# Task6- DAY4- Basic RISC-V CPU Micro-Architecture:
 
 ## Starting point code for RISC-V CPU
 
@@ -606,7 +606,7 @@ Below is the screenshot of the implementation of code in makerchip
    endmodule
 ```
 
-## Fetch and Decode
+## STEP1-Fetch
 
 ### Program counter
 
@@ -630,7 +630,7 @@ Value of the PC will be fed as input to instruction memory to be fetched the ins
 Screenshot of implementation of the fetch logic in Makerchip
 ![Screenshot 2024-08-21 100217](https://github.com/user-attachments/assets/09122cbb-14f5-4621-b6cc-a79010194eb0)
 
-## Decode
+## STEP2- Decode
 
 ### a)Lab for Instruction type Decode logic
 ### b)Lab for Instruction immediate decoding
@@ -693,7 +693,7 @@ Screenshot of implementation of the fetch logic in Makerchip
 Screenshot for Lab for Instruction type Decode logic ,Lab for Instruction immediate decoding,Lab for Instruction Field Decode logic
 ![Screenshot 2024-08-21 104357](https://github.com/user-attachments/assets/47a3be92-6156-4f2f-9293-3ba12d634f98)
 
-### d)Lab for decode individual instruction
+### d) Lab for decode individual instruction
 code for above decode logic
 ```
  $dec_bits [10:0] = {$funct7[5], $funct3, $opcode};
@@ -709,6 +709,56 @@ code for above decode logic
 ## Screen shot of Decode logic
 ![Screenshot 2024-08-21 105420](https://github.com/user-attachments/assets/8c9736a4-2df0-47f3-a950-5f397b193287)
 
+## STEP3 - RISC-V Control Logic:
+### a) Lab for Register Read
+Code for the Register read
+```
+$rf_rd_en1 = $rs1_use;
+         $rf_rd_index1[4:0] = $rs1;
+         $rf_rd_en2 = $rs2_use;
+         $rf_rd_index2[4:0] = $rs2;
+         
+         $src1_value[31:0] = $rf_rd_data1;
+         $src2_value[31:0] = $rf_rd_data2;
+```
+### b) Lab for ALU operations for add/addi:
+code for the above lab
+```
+$result[31:0] = $is_addi ? $src1_value + $imm :
+                $is_add ? $src1_value + $src2_value :
+                32'bx ;
+```
+### c) Lab for Register file write:
+code for the above lab
+```
+ $rf_wr_en = $rd_use;
+         $rf_wr_index[4:0] = $rd;
+         $rf_wr_data[31:0] = $rd == 0 ? 0 : $result;
+```
+### d) Lab for Implementing Branch Instructions:
+code for the above lab
+```
+$taken_branch = $is_beq ? ($src1_value == $src2_value):
+                         $is_bne ? ($src1_value != $src2_value):
+                         $is_blt ? (($src1_value < $src2_value)^($src1_value[31] != $src2_value[31])):
+                         $is_bge ? (($src1_value >= $src2_value)^($src1_value[31] != $src2_value[31])):
+                         $is_bltu ? ($src1_value < $src2_value):
+                         $is_bgeu ? ($src1_value >= $src2_value):
+                                    1'b0;
+         `BOGUS_USE($taken_branch)
+         $br_tgt_pc[31:0] = $pc + $imm;
+```
+### e) Lab for creating test bench:
+```
+*passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9) ;
+```
+
+### Screen shot for the STEP 3 RISC-V control logic:
+
+
+
+         
+         
 
 
 
