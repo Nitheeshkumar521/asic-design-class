@@ -736,7 +736,8 @@ code for the above lab
          $rf_wr_data[31:0] = $rd == 0 ? 0 : $result;
 ```
 Screen shot below shows about  Register read, ALU operation on ADD,ADDI,Register file write
-![Screenshot 2024-08-21 201900](https://github.com/user-attachments/assets/a61fb971-cac7-42f6-ae97-3e83db4aec27)
+![Screenshot 2024-08-21 203421](https://github.com/user-attachments/assets/09f3ecf1-b8e1-4c9a-8f79-d09432f9e6b0)
+
 
 ### d) Lab for Implementing Branch Instructions:
 code for the above lab
@@ -762,6 +763,7 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 # DAY 5 - Complete Pipelined RISC-V CPU micro Architecture:
 
 ## STEP-1 Pipelining the CPU:
+### a)
 
 
 
