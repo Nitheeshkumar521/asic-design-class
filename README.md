@@ -486,7 +486,47 @@ Validity provides easier debug,cleaner design , error checking , automated clock
 ### Lab on 2-Cycle calculator with validity:
 
 Below is the screen shot of the 2-cycle calculator with validity:
-![Screenshot 2024-08-21 053824](https://github.com/user-attachments/assets/8649e132-4248-447e-a775-d85a3b8c82af)
+![Screenshot 2024-08-21 064245](https://github.com/user-attachments/assets/149aeb0c-45c0-450a-8eca-9a69c09bacde)
+
+## Lab on 2-Cycle Calculator with Single valued memory:
+
+TL verilog code:
+```
+ |calc
+      @0
+         $reset = *reset;
+         $clk_nit = *clk;
+      @1
+         $valid = $reset ? 0 : >>1$valid + 1;
+         $valid_or_reset = $valid || $reset; 
+   
+      ?$valid_or_reset
+         @1   
+            $val1[31:0] = >>2$out[31:0];
+            $val2[31:0] = $rand2[3:0];
+            $sel[2:0] = $rand3[2:0];
+            
+            $sum[31:0] = $val1[31:0] + $val2[31:0];
+            $diff[31:0] = $val1[31:0] - $val2[31:0];
+            $prod[31:0] = $val1[31:0] * $val2[31:0];
+            $quot[31:0] = $val1[31:0] / $val2[31:0];
+            
+            
+         
+         @2
+            $mem[31:0] = $reset ? '0 : ($sel == 3'd5) ? >>2$out[31:0]
+                                                      : >>2$mem[31:0];
+            $recall[31:0] = >>2$mem[31:0];                                          
+                                                      
+            $out[31:0] = $reset ? '0 : ($sel == 3'd0) ? $sum[31:0]
+                                     : ($sel == 3'd1) ? $diff[31:0]
+                                     : ($sel == 3'd2) ? $prod[31:0]
+                                     : ($sel == 3'd3) ? $quot[31:0]
+                                     : ($sel == 3'd4) ? $recall[31:0]
+                                     : '0;
+```
+
+
 
 
 
