@@ -610,22 +610,22 @@ Below is the screenshot of the implementation of code in makerchip
 
 ### Program counter
 
-In the stage of fetch CPU fetches the next instruction to be executed from instruction memory, The address where the instruction will be fetched is given by program counter. The program counter is implemented according to the condition 
+In the stage of fetch CPU fetches the next instruction to be executed from instruction memory, The address where the instruction will be fetched is given by program counter. The program counter is implemented according to the condition,Fetching instruction from the instruction memory is given by
 ```
-$reset = *reset;
-$pc[31:0] = >>1$reset ? 0 : >>1$pc + 32'd4;
+|cpu
+      @0
+         $reset = *reset;
+         
+         $pc[31:0] = $reset ? '0 : >>1$pc + 32'd4;
+         
+         $imem_rd_en = !$reset ? 1 : 0;
+         $imem_rd_addr[31:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
 
-```
-Fetching instruction from the instruction memory is given by
-
-```
-@1 
-         $imem_rd_en = !$reset;
-         $imem_rd_addr[M4_IMEM_INDEX_CNT-1:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
-         $inst[31:0] = $imem_rd_data[31:0];
+      @1
+         $instr[31:0] = $imem_rd_data[31:0];
 ```
 
-code for Fetch logic
+### code for Fetch logic
 ```
 \m4_TLV_version 1d: tl-x.org
 \SV
@@ -678,6 +678,10 @@ code for Fetch logic
 
       @1
          $instr[31:0] = $imem_rd_data[31:0];
+      ?$imem_rd_en
+         @1
+            $imem_rd_data[31:0] = /imem[$imem_rd_addr]$instr;   
+        
 
 
 
@@ -699,17 +703,43 @@ code for Fetch logic
    //  o data memory
    //  o CPU visualization
    |cpu
-      //m4+imem(@1)    // Args: (read stage)
+      m4+imem(@1)    // Args: (read stage)
       //m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
       //m4+dmem(@4)    // Args: (read/write stage)
 
-   //m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
+  //m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
 \SV
    endmodule
+
 ```
 
 Value of the PC will be fed as input to instruction memory to be fetched the instruction from particular address location.
 Screenshot of implementation of the fetch logic in Makerchip
+![Screenshot 2024-08-21 100217](https://github.com/user-attachments/assets/09122cbb-14f5-4621-b6cc-a79010194eb0)
+
+## Decode
+Code for decoding logic
+```
+$is_i_instr = $instr[6:2] ==? 5'b0000x ||
+              $instr[6:2] ==? 5'b001x0 ||
+              $instr[6:2] ==? 5'b11001;
+                       
+         
+$is_u_instr = $instr[6:2] ==? 5'b0x101;
+         
+$is_r_instr =   $instr[6:2] ==? 5'b01011 ||
+                $instr[6:2] ==? 5'b011x0 ||
+                $instr[6:2] ==? 5'b10100;
+         
+$is_b_instr = $instr[6:2] ==? 5'b11000;
+         
+$is_j_instr = $instr[6:2] ==? 5'b11011;
+         
+$is_s_instr = $instr[6:2] ==? 5'b0100x;
+```
+
+
+
 
 
 
