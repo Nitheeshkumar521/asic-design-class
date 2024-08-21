@@ -761,6 +761,9 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 
 # DAY 5 - Complete Pipelined RISC-V CPU micro Architecture:
 
+## STEP-1 Pipelining the CPU:
+
+
 
 
 
