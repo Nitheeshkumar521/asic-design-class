@@ -764,12 +764,12 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 
 ## STEP-1 Pipelining the CPU:
 ### Pipelined CPU 
-code 
 <details>
 <summary>
 Code for pipelined cpu
 </summary>
 <pre>
+
 //\m4_TLV_version 1d: tl-x.org
 \SV
    // This code can be found in: https://github.com/stevehoover/RISC-V_MYTH_Workshop
@@ -1006,6 +1006,7 @@ Code for pipelined cpu
    m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
 \SV
    endmodule
+
    
 </pre>
 </details>
