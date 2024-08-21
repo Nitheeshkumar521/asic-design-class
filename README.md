@@ -1568,6 +1568,16 @@ Screenshot of RISC-V CPU Code,Diagram,waveform,clock signal, reset signal in mak
 
 ![Screenshot 2024-08-21 220931](https://github.com/user-attachments/assets/9a28f430-eed8-47ca-9d14-342ae8dea1d0)
 
+![Screenshot 2024-08-21 221320](https://github.com/user-attachments/assets/705a888d-eeb2-40c2-908b-82b7588dafcd)
+
+Hence we can see in the below waveform that in r[14] we can see the sum from 1 to 9
+
+![Screenshot 2024-08-21 221552](https://github.com/user-attachments/assets/288460d2-f8aa-4dec-b1d8-d93b56794be8)
+
+Completed in 58 cycles.
+
+
+
 
 
 
