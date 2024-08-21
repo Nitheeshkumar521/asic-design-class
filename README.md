@@ -754,6 +754,10 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 ```
 
 ### Screen shot for the STEP 3 RISC-V control logic:
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/a8939c66-f851-4f89-ac1d-9d3b7ccf6b52">
+
+# DAY 5 - Complete Pipelined RISC-V CPU micro Architecture:
+
 
 
 
