@@ -1561,11 +1561,15 @@ Code complete RISC-V CPU
 </details>
 <br>
 
-Screenshot of RISC-V CPU Code,Diagram,waveform,clock signal, reset signal in makerchip:
+### Screenshot of RISC-V CPU Code,Diagram,waveform,clock signal, reset signal in makerchip:
+
+Final Diagram
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/92033d61-7e64-44b9-a231-45aaa3d8eadf">
 
+Clock signal
 ![Screenshot 2024-08-21 220434](https://github.com/user-attachments/assets/68cc5cdf-3839-4bc1-8842-cefe833e2fdb)
 
+Reset Signal
 ![Screenshot 2024-08-21 220931](https://github.com/user-attachments/assets/9a28f430-eed8-47ca-9d14-342ae8dea1d0)
 
 ![Screenshot 2024-08-21 221320](https://github.com/user-attachments/assets/705a888d-eeb2-40c2-908b-82b7588dafcd)
