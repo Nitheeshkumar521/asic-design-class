@@ -767,7 +767,7 @@ $taken_branch = $is_beq ? ($src1_value == $src2_value):
 code 
 <details>
 <summary>
-Branch Logic
+Code for pipelined cpu
 </summary>
 <pre>
 //\m4_TLV_version 1d: tl-x.org
