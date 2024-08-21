@@ -525,6 +525,42 @@ TL verilog code:
                                      : ($sel == 3'd4) ? $recall[31:0]
                                      : '0;
 ```
+Below is the screenshot of the implementation of code in makerchip
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/77f699e4-d3d0-422c-8c3d-6f5b69e3a5a3">
+
+
+# Task 6 Basic RISC-V CPU Micro-Architecture:
+
+## Fetch and Decode
+
+### Program counter
+
+In the stage of fetch CPU fetches the next instruction to be executed from instruction memory, The address where the instruction will be fetched is given by program counter. The program counter is implemented according to the condition 
+```
+$reset = *reset;
+$pc[31:0] = >>1$reset ? 0 : >>1$pc + 32'd4;
+
+```
+Fetching instruction from the instruction memory is given by
+
+```
+@1 
+         $imem_rd_en = !$reset;
+         $imem_rd_addr[M4_IMEM_INDEX_CNT-1:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
+         $inst[31:0] = $imem_rd_data[31:0];
+```
+
+Value of the PC will be fed as input to instruction memory to be fetched the instruction from particular address location.
+Screenshot of implementation of the fetch logic in Makerchip
+
+
+
+
+
+
+
+
+
 
 
 
