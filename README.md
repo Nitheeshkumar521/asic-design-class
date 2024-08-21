@@ -456,9 +456,48 @@ Hence,we got same output for both GCC and RISCV compilers.
 It is modern hardware description language designed to simplify and accelerate digital design by reducing complicity we were facing in verilog and VHDL.
 
 ## Building Combinational Circuit for Caluculator in Makerchip:
+
+### Lab on Combinational Logic:
 A combinational calculator using TL verilog code on Makerchip.
 Screenshot of the implementation of the basic combinational circuit in makerchip.
-![Screenshot 2024-08-20 151457](https://github.com/user-attachments/assets/694eceae-fc93-43cf-88c2-c4cc2d7a13e7)
+![Screenshot 2024-08-21 050404](https://github.com/user-attachments/assets/4b5a36dd-f2e7-4cc1-bea3-e6f0acca2af1)
+
+## Sequential Logic:
+
+### Sequential Calculator Lab:
+
+Screenshot of the implementation of Sequential Calculator on makerchip.
+![Screenshot 2024-08-20 150204](https://github.com/user-attachments/assets/d41e3f10-6190-46f9-bfb2-7ff89506f3d4)
+
+## Pipelined Logic:
+
+It is a technique used in digital system design to improve the efficiency of the process by dividing complex tasks into smaller and sequential stages. Every stage performs a specific operation on the data and these stages are arranged in a pipeline. In a pipeline architecture, the processing of an instruction is divided into several stages. This allows for overlapping the execution of multiple instructions, reducing the overall time needed to complete a sequential of tasks.
+Hence, circuit can be operated in higher frequencies.
+
+Screen shot shows the implementation of the pipelined logic in makerchip.
+![Screenshot 2024-08-21 053824](https://github.com/user-attachments/assets/6be4b738-55a2-40b4-bff2-14e5bc6a0b2f)
+
+## Validity:
+
+
+Validity is used to track the state and timing of transactions within a design description. In TL-verilog transactions are used to represent higher level actions that occur in a design. Validity refers to whether a transaction is considered valid or invalid based on its state.
+Validity provides easier debug,cleaner design , error checking , automated clock.
+
+### Lab on 2-Cycle calculator with validity:
+
+Below is the screen shot of the 2-cycle calculator with validity:
+![Screenshot 2024-08-21 053824](https://github.com/user-attachments/assets/8649e132-4248-447e-a775-d85a3b8c82af)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
