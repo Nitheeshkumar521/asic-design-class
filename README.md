@@ -632,9 +632,9 @@ Screenshot of implementation of the fetch logic in Makerchip
 
 ## Decode
 
-### Lab for Instruction type Decode logic
-### Lab for Instruction immediate decoding
-### Lab for Instruction Field Decode logic
+### a)Lab for Instruction type Decode logic
+### b)Lab for Instruction immediate decoding
+### c)Lab for Instruction Field Decode logic
 
  Code for all above decode logics labs
 ```
@@ -693,7 +693,7 @@ Screenshot of implementation of the fetch logic in Makerchip
 Screenshot for Lab for Instruction type Decode logic ,Lab for Instruction immediate decoding,Lab for Instruction Field Decode logic
 ![Screenshot 2024-08-21 104357](https://github.com/user-attachments/assets/47a3be92-6156-4f2f-9293-3ba12d634f98)
 
-### Lab for decode individual instruction
+### d)Lab for decode individual instruction
 code for above decode logic
 ```
  $dec_bits [10:0] = {$funct7[5], $funct3, $opcode};
