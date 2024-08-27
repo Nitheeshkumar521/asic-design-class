@@ -1948,6 +1948,8 @@ xreg[14] contents
 ![Screenshot 2024-08-21 221552](https://github.com/user-attachments/assets/75b5912a-c276-4422-8c3f-32e4c1016fbd)
 
 Stimulation of verilog code in gtk wave:
+![Screenshot 2024-08-27 073848](https://github.com/user-attachments/assets/68bf0299-e667-45e3-89e2-75491b169237)
+
 
 
 
