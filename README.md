@@ -1582,9 +1582,9 @@ Completed in 58 cycles.
 
 
 
-# Converting RISC-V CPU TLV code to Verilog code :
+# TASK 7 Converting RISC-V CPU TLV code to Verilog code :
 
-Steps to be follwed :
+Steps to be followed :
 ### 1) Installing tools:
 
 Follow the process:
