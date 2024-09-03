@@ -1958,7 +1958,7 @@ Hence,On comparing above waveforms we can tell the result is same for code that 
 
 
 # TASK 8 - Addition of Peripherals to convert the Digital output to analog output using DAC and PLL:
-## STEP1 -Tools to be installed:
+## Step1 -Tools to be installed:
 Installing yosys in linux:
 ```
     $ git clone https://github.com/YosysHQ/yosys.git
@@ -1976,14 +1976,14 @@ Installing yosys in linux:
 ![Screenshot from 2024-09-03 05-45-57](https://github.com/user-attachments/assets/4d31200b-7591-44f7-938b-d6da6597a883)
 Verifying that yosys is installed
 
-### STEP2 -Commands used for installing iverilog:
+### Step2 -Commands used for installing iverilog:
 ```
     sudo apt-get install iverilog
 ```
 ![Screenshot from 2024-09-03 05-46-58](https://github.com/user-attachments/assets/37f20790-4179-4bb6-951f-d1a66d84b337)
 Screenshot that iverilog installed
 
-### STEP3 -Commands for installtion of gtkwave :
+### Step3 -Commands for installtion of gtkwave :
 ```
     sudo apt update
     sudo apt install gtkwave
@@ -1996,12 +1996,12 @@ Screenshot that gtkwave installed in linux
 ### Phase-Locked-Loop (PLL)
 ### Digital-to-Analog Converter (DAC)
 
-### STEP4 -Files required for stimulation of BabySoC:
+### Step4 -Files required for stimulation of BabySoC:
 src/module - contains all RTL files and testbench.v used for simulating our BabySoC design
 src/include - contains RTL files used in `include define in main RTL files in src/module
 These  files except the RV_CPU.v have been taken from reposatory, https://github.com/Subhasis-Sahu/BabySoC_Simulation
 
-## STEP5 -Run Funtional Stimulation:
+## Step5 -Run Funtional Stimulation:
 ```
 
     iverilog -o output/RV_CPU.out src/module/testbench.v -I src/include -I src/module
