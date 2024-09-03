@@ -1958,7 +1958,7 @@ Hence,On comparing above waveforms we can tell the result is same for code that 
 
 
 # TASK 8 - Addition of Peripherals to convert the Digital output to analog output using DAC and PLL:
-## Tools to be installed:
+## STEP1 -Tools to be installed:
 Installing yosys in linux:
 ```
     $ git clone https://github.com/YosysHQ/yosys.git
@@ -1974,17 +1974,44 @@ Installing yosys in linux:
 ```
 
 ![Screenshot from 2024-09-03 05-45-57](https://github.com/user-attachments/assets/4d31200b-7591-44f7-938b-d6da6597a883)
+Verifying that yosys is installed
 
+### STEP2 -Commands used for installing iverilog:
+```
+    sudo apt-get install iverilog
+```
+![Screenshot from 2024-09-03 05-46-58](https://github.com/user-attachments/assets/37f20790-4179-4bb6-951f-d1a66d84b337)
+Screenshot that iverilog installed
 
+### STEP3 -Commands for installtion of gtkwave :
+```
+    sudo apt update
+    sudo apt install gtkwave
+```
+![Screenshot from 2024-09-03 05-48-13](https://github.com/user-attachments/assets/923c7808-2562-46c7-a90e-94281bd846f8)
+![Screenshot from 2024-09-03 05-48-57](https://github.com/user-attachments/assets/f3b4abea-0838-4fcf-a632-b5c7ce841e63)
+Screenshot that gtkwave installed in linux
 
+### BabySoC Simulation
+### Phase-Locked-Loop (PLL)
+### Digital-to-Analog Converter (DAC)
 
+### STEP4 -Files required for stimulation of BabySoC:
+src/module - contains all RTL files and testbench.v used for simulating our BabySoC design
+src/include - contains RTL files used in `include define in main RTL files in src/module
+These  files except the RV_CPU.v have been taken from reposatory, https://github.com/Subhasis-Sahu/BabySoC_Simulation
 
+## STEP5 -Run Funtional Stimulation:
+```
 
+    iverilog -o output/RV_CPU.out src/module/testbench.v -I src/include -I src/module
+    ./RV_CPU.out
+    gtkwave dump.out
+```
+The output of the sum 1 to 9 can be observed 
+![Screenshot from 2024-09-03 06-03-37](https://github.com/user-attachments/assets/7ed01f2d-8038-4efb-b163-eb4d73d1bfd8)
 
-
-
-
-
+![Screenshot from 2024-09-02 17-42-27](https://github.com/user-attachments/assets/dadb8716-da27-45d8-8de8-624b8e6eb0f4)
 
 
 
