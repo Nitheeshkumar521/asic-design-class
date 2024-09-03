@@ -1972,7 +1972,10 @@ Installing yosys in linux:
     $ make 
     $ sudo make install
 ```
-/home/nitheesh-kumar/Pictures/Screenshots/Screenshot from 2024-09-03 05-45-57.png
+
+![Screenshot from 2024-09-03 05-45-57](https://github.com/user-attachments/assets/4d31200b-7591-44f7-938b-d6da6597a883)
+
+
 
 
 
