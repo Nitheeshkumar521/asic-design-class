@@ -2032,10 +2032,16 @@ The output of the sum 1 to 9 can be observed
 ![Screenshot from 2024-10-22 04-47-04](https://github.com/user-attachments/assets/a38a44aa-5c7a-40d3-9540-3109f0e04bce)
 
 
+![Screenshot from 2024-10-21 19-16-38](https://github.com/user-attachments/assets/da26cb42-c7ba-4637-9e27-290ca1caccb3)
+
+
+![Screenshot from 2024-10-22 04-58-15](https://github.com/user-attachments/assets/818f08a4-da7c-4aa7-b187-d17d4b6208fa)
 
 
 
 
+
+![Screenshot from 2024-10-22 04-59-42](https://github.com/user-attachments/assets/28e9800c-c4ac-4292-9d1b-501160e2d043)
 
 
 
