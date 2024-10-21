@@ -2014,8 +2014,7 @@ The output of the sum 1 to 9 can be observed
 ![Screenshot from 2024-09-02 17-42-27](https://github.com/user-attachments/assets/dadb8716-da27-45d8-8de8-624b8e6eb0f4)
 
 
-/home/nitheesh-kumar/Pictures/Screenshots/Screenshot from 2024-10-22 04-10-45.png
-
+![Alt text](/home/nitheesh-kumar/Pictures/Screenshots/Screenshot from 2024-10-22 04-10-45.png)
 
 
 
