@@ -2014,20 +2014,22 @@ The output of the sum 1 to 9 can be observed
 ![Screenshot from 2024-09-02 17-42-27](https://github.com/user-attachments/assets/dadb8716-da27-45d8-8de8-624b8e6eb0f4)
 
 
-![Alt text](/home/nitheesh-kumar/Pictures/Screenshots/Screenshot from 2024-10-22 04-10-45.png)
 
 
 
 
 
+![Screenshot from 2024-10-22 04-10-45](https://github.com/user-attachments/assets/5e3a9b89-67fb-4560-9db1-dddc6490db2e)
 
+![Screenshot from 2024-10-21 19-06-58](https://github.com/user-attachments/assets/daf93199-bf2d-4e7a-afbf-84ecc63877c5)
 
+![Screenshot from 2024-10-22 04-42-10](https://github.com/user-attachments/assets/95eddf33-0be0-4cd7-90ba-ecabf8a2c916)
 
+![Screenshot from 2024-10-22 04-45-28](https://github.com/user-attachments/assets/64baa11f-1d31-4433-88ae-9fcdd99a47d9)
 
+![Screenshot from 2024-10-22 04-45-51](https://github.com/user-attachments/assets/0d18f9ae-bd61-4207-b629-3ea443b6a59c)
 
-
-
-
+![Screenshot from 2024-10-22 04-47-04](https://github.com/user-attachments/assets/a38a44aa-5c7a-40d3-9540-3109f0e04bce)
 
 
 
