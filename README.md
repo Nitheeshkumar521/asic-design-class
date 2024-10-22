@@ -2150,19 +2150,76 @@ write_verilog -noattr multiple_modules_flat.v
 ![Screenshot from 2024-10-22 05-11-47](https://github.com/user-attachments/assets/f3b20547-2b62-43df-ad6c-cc817d41c205)
 ![Screenshot from 2024-10-21 19-51-09](https://github.com/user-attachments/assets/3bdc3898-67e9-4004-a0b6-bc307bf00e70)
 
-###Module Level Synthesis
+### Module Level Synthesis
 
 This method is preferred when multiple instances of same module are used. The synthesis is carried out once and is replicate multiple times, and the multiple instances of the same module are stitched together in the top module. This method is helpful when making use of divide and conquer algorithm
+
+```
+1. yosys
+2. read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+3. read_verilog multiple_modules.v
+4. synth -top sub_module1
+5. abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+6. show
+```
 
 ![Screenshot from 2024-10-22 05-19-44](https://github.com/user-attachments/assets/b1e886f5-a459-4f7c-a8b2-bc55ff3fd221)
 ![Screenshot from 2024-10-22 05-20-08](https://github.com/user-attachments/assets/603dbfd9-c5ed-40d2-ae6e-63fa5964c8ec)
 ![Screenshot from 2024-10-22 05-20-58](https://github.com/user-attachments/assets/b4ad6f61-e238-4e8e-a491-7ac310e07e4a)
 ![Screenshot from 2024-10-22 05-21-06](https://github.com/user-attachments/assets/47c0d66c-93a7-44e6-9b57-73e6195f905b)
+Above we can seeRealization of the logic 
+
+## Flipflop coding styles and optimization:
+
+In a digital design, when an input signal changes state, the output changes after a propogation delay. All logic gates add some delay to singals. These delays cause expected and unwanted transitions in the output, called as Glitches where the output value is momentarily different from the expected value. An increased delay in one path can cause glitch when those signals are combined at the output gate. In short, more combinational circuits lead to more glitchy outputs that will not settle down with the output value.
+Flip flop overview
+
+A D flip-flop is a sequential element that follows the input pin d at the clock's given edge. D flip-flop is a fundamental component in digital logic circuits. There are two types of D Flip-Flops being implemented: Rising-Edge D Flip Flop and Falling-Edge D Flip Flop.
+
+Every flop element needs an initial state, else the combinational circuit will evaluate to a garbage value. In order to achieve this, there are control pins in the flop namely: Set and Reset which can either be Synchronous or Asynchronous.
+### Asynchronous Reset/Set:
+### Synchronous Reset:
+
+## Flip flop stimulation :
+```
+Steps Followed for analysing Asynchronous behavior:
+//Load the design in iVerilog by giving the verilog and testbench file names
+iverilog dff_asyncres.v tb_dff_asyncres.v 
+//List so as to ensure that it has been added to the simulator
+ls
+//To dump the VCD file
+./a.out
+//To load the VCD file in GTKwaveform
+gtkwave tb_dff_asyncres.vcd
+```
+
+
 ![Screenshot from 2024-10-22 05-26-04](https://github.com/user-attachments/assets/30cef940-8e89-48a8-a00b-93f7e0c95d99)
 ![Screenshot from 2024-10-21 19-56-31](https://github.com/user-attachments/assets/2f537777-bdbd-4992-be28-fb72a4f5fa80)
 
 ![Screenshot from 2024-10-21 20-01-00](https://github.com/user-attachments/assets/fedcc0c7-527a-4eed-a464-b1c7a65af802)
 ![Screenshot from 2024-10-21 20-06-08](https://github.com/user-attachments/assets/d4bd0619-1650-44d9-8056-7f68a72914aa)
+
+Above we can see the wave forms of the flipflop stimulation of the Asynchronous set/reset,synchronous reset
+
+## FLIP FLOP SYNTHESIS:
+```
+_Invoke Yosys
+yosys
+_Read library 
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+_Read Design
+read_verilog dff_asyncres.v
+_Synthesize Design - this controls which module to synthesize
+synth -top dff_asyncres
+_There will be a separate flop library under a standard library, but here we point back to the same library and tool looks only for DFF instead of all cells
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+_Generate Netlist
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+_Realizing Graphical Version of Logic for single modules
+show
+```
+
 
 
 ![Screenshot from 2024-10-22 05-34-40](https://github.com/user-attachments/assets/2ff081b4-9ad6-4aee-b24b-a3143e5d5dfc)
