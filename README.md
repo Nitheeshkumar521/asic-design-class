@@ -2100,9 +2100,11 @@ The output of the sum 1 to 9 can be observed
 
 ![Screenshot from 2024-10-21 20-45-24](https://github.com/user-attachments/assets/6e415b5b-6f0d-4e72-b276-5bcb532a04d5)
 
+
 ![Screenshot from 2024-10-22 06-06-31](https://github.com/user-attachments/assets/e6b8b093-3315-457d-ab94-dd4b3418ae8e)
 
 
 ![Screenshot from 2024-10-22 06-06-49](https://github.com/user-attachments/assets/f0c23064-99a2-4334-988f-dc6368204010)
 ![Screenshot from 2024-10-22 06-06-57](https://github.com/user-attachments/assets/91e7177d-2cf7-4cf6-ac49-8178ee3a154f)
+
 
