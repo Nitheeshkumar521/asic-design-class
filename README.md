@@ -2023,15 +2023,18 @@ RTL (Register Transfer Level) design is the process of translating specification
 
 ### Testbench:
 A test bench is used to provide stimuli to the design under test (DUT) and verify its functionality as specified in the Verilog description. It is written separately and includes the instantiation of the design that needs to be simulated. The test bench facilitates the validation of the design's performance and behavior.
-file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-36-35.png![image](https://github.com/user-attachments/assets/13863f7a-fb04-49c8-9a30-14f0e8732eab)
 
+
+![Screenshot from 2024-10-22 08-36-35](https://github.com/user-attachments/assets/9ac9588e-d029-421c-bc6b-21f0299911dd)
 
 ## Introduction to iverilog and GTKWave
 ### Iverilog and GTKWAVE:
 iverilog is an open-source tool for simulating and synthesizing Verilog designs. It is widely used for the design and verification of digital circuits described in the Verilog hardware description language (HDL).
 GTKWave is a widely-used open-source waveform viewer that enables users to visualize and analyze digital signal waveforms generated during circuit simulations. It is often paired with simulation tools like iverilog, providing a graphical representation of signal changes over time within a digital design.
-file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-43-24.png![image](https://github.com/user-attachments/assets/3f4ae108-4db1-4b87-96e7-91e3f6c6e978)
+![Screenshot from 2024-10-22 08-43-24](https://github.com/user-attachments/assets/ce57e124-d943-45ac-ae16-0556b9bafc05)
+
 ## Introduction to labs:
+
  Labs using iverilog & gtkwave
 Simulation using iverilog simulator good_Mux
 
@@ -2060,10 +2063,15 @@ Wave form of the Good mux using GTkwave
 ###  Introduction to Yosys & Logic Synthesis
 
 Synthesizer is a tool for converting the RTL to Netlist and here we are using the Yosys Synthesizer.
-file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-54-25.png![image](https://github.com/user-attachments/assets/c9429195-7a2e-49dc-8130-95c2b3b3e35f)
+![Screenshot from 2024-10-22 08-54-25](https://github.com/user-attachments/assets/b75249c9-954d-4025-8aa6-7cc0afca672b)
 verifying the process
-file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-55-12.png![image](https://github.com/user-attachments/assets/76b810cc-badf-4a4d-99d6-fa7bb180f96d)
+
+
+
 1 RTL design 
+
+![Screenshot from 2024-10-22 08-55-12](https://github.com/user-attachments/assets/c28f9b3f-c6a6-40c8-ade7-13edce5469a8)
+
 2 synthesis
 3 Yosys flow
 below we can see  the process to be followed:
@@ -2092,6 +2100,25 @@ write_verilog -noattr good_mux_netlist.v
 
 ![Screenshot from 2024-10-22 04-47-04](https://github.com/user-attachments/assets/a38a44aa-5c7a-40d3-9540-3109f0e04bce)
 
+
+# Day 2 of Labs:
+## Introduction to timing labs
+
+navigate to the verilog_files directory then type these below commands
+
+```
+Command to open the libary file
+$ vim ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+To shut off the background colors/ syntax off:
+: syn off
+To enable the line numbers
+: se nu
+```
+
+### Multiple modulues:
+SubModules Staistics of Multiple Modules
+
+
 ![Screenshot from 2024-10-21 19-16-38](https://github.com/user-attachments/assets/da26cb42-c7ba-4637-9e27-290ca1caccb3)
 ![Screenshot from 2024-10-22 04-58-15](https://github.com/user-attachments/assets/818f08a4-da7c-4aa7-b187-d17d4b6208fa)
 
@@ -2107,8 +2134,22 @@ write_verilog -noattr good_mux_netlist.v
          
 ![Screenshot from 2024-10-22 05-04-03](https://github.com/user-attachments/assets/934cae73-dac2-41c1-a254-cce94d490494)
 
+### Flat synthesis:
+```
+_To flatten the netlist
+flatten
+_Writing the netlist in a crisp manner and to view it
+write_verilog -noattr multiple_modules_flat.v
+!vim multiple_modules_flat.v
+```
+
+
 ![Screenshot from 2024-10-22 05-04-16](https://github.com/user-attachments/assets/e2586d27-9e13-4a79-a1f9-17d513301da2)
 ![Screenshot from 2024-10-22 05-11-47](https://github.com/user-attachments/assets/f3b20547-2b62-43df-ad6c-cc817d41c205)
+
+###Module Level Synthesis
+
+This method is preferred when multiple instances of same module are used. The synthesis is carried out once and is replicate multiple times, and the multiple instances of the same module are stitched together in the top module. This method is helpful when making use of divide and conquer algorithm
 ![Screenshot from 2024-10-21 19-51-09](https://github.com/user-attachments/assets/3bdc3898-67e9-4004-a0b6-bc307bf00e70)
 ![Screenshot from 2024-10-22 05-19-44](https://github.com/user-attachments/assets/b1e886f5-a459-4f7c-a8b2-bc55ff3fd221)
 ![Screenshot from 2024-10-22 05-20-08](https://github.com/user-attachments/assets/603dbfd9-c5ed-40d2-ae6e-63fa5964c8ec)
