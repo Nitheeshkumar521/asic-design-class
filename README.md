@@ -2016,19 +2016,73 @@ The output of the sum 1 to 9 can be observed
 
 
 
-### TASK
+# TASK 9 (DAY 1):
 ## 1. Introduction of open source simulator iverilog
-# Design of RTL:
+### Design of RTL:
 RTL (Register Transfer Level) design is the process of translating specifications into a functional representation of a digital circuit. It serves as an intermediary between high-level behavioral design and low-level gate-level design. RTL focuses on the data transfer between registers, abstracting away the specifics of gate and transistor implementations. Typically, RTL designs are described using Hardware Description Languages (HDLs) such as Verilog or VHDL.
 
-# Testbench:
+### Testbench:
 A test bench is used to provide stimuli to the design under test (DUT) and verify its functionality as specified in the Verilog description. It is written separately and includes the instantiation of the design that needs to be simulated. The test bench facilitates the validation of the design's performance and behavior.
 file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-36-35.png![image](https://github.com/user-attachments/assets/13863f7a-fb04-49c8-9a30-14f0e8732eab)
 
 
+## Introduction to iverilog and GTKWave
+### Iverilog and GTKWAVE:
+iverilog is an open-source tool for simulating and synthesizing Verilog designs. It is widely used for the design and verification of digital circuits described in the Verilog hardware description language (HDL).
+GTKWave is a widely-used open-source waveform viewer that enables users to visualize and analyze digital signal waveforms generated during circuit simulations. It is often paired with simulation tools like iverilog, providing a graphical representation of signal changes over time within a digital design.
+file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-43-24.png![image](https://github.com/user-attachments/assets/3f4ae108-4db1-4b87-96e7-91e3f6c6e978)
+## Introduction to labs:
+ Labs using iverilog & gtkwave
+Simulation using iverilog simulator good_Mux
+
+Introduction of code:
+
+```
+cd asic
+mkdir day1
+cd day1
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+cd sky130RTLDesignAndSynthesisWorkshop
+cd verilog_files
+
+iverilog good_mux.v tb_good_mux.v
+./a.out
+gtkwave tb_good_mux.vcd
+
+```
+
+
+Wave form of the Good mux using GTkwave
+
 ![Screenshot from 2024-10-22 04-10-45](https://github.com/user-attachments/assets/5e3a9b89-67fb-4560-9db1-dddc6490db2e)
 
 ![Screenshot from 2024-10-21 19-06-58](https://github.com/user-attachments/assets/daf93199-bf2d-4e7a-afbf-84ecc63877c5)
+###  Introduction to Yosys & Logic Synthesis
+
+Synthesizer is a tool for converting the RTL to Netlist and here we are using the Yosys Synthesizer.
+file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-54-25.png![image](https://github.com/user-attachments/assets/c9429195-7a2e-49dc-8130-95c2b3b3e35f)
+verifying the process
+file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-55-12.png![image](https://github.com/user-attachments/assets/76b810cc-badf-4a4d-99d6-fa7bb180f96d)
+1 RTL design 
+2 synthesis
+3 Yosys flow
+below we can see  the process to be followed:
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog good_mux.v
+synth -top good_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr good_mux_netlist.v
+
+```
+
+
+
+
+
 
 ![Screenshot from 2024-10-22 04-42-10](https://github.com/user-attachments/assets/95eddf33-0be0-4cd7-90ba-ecabf8a2c916)
 
