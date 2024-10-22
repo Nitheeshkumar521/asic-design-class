@@ -2060,6 +2060,27 @@ The output of the sum 1 to 9 can be observed
 ![Screenshot from 2024-10-21 20-06-08](https://github.com/user-attachments/assets/d4bd0619-1650-44d9-8056-7f68a72914aa)
 
 
+![Screenshot from 2024-10-22 05-34-40](https://github.com/user-attachments/assets/2ff081b4-9ad6-4aee-b24b-a3143e5d5dfc)
 
+
+
+![Screenshot from 2024-10-22 05-35-13](https://github.com/user-attachments/assets/1767b70e-5608-4d66-bb76-bd1832658d9f)
+
+![Screenshot from 2024-10-22 05-35-52](https://github.com/user-attachments/assets/c64fb4f4-3342-4d92-be65-d0b231f92b17)
+
+![Screenshot from 2024-10-22 05-36-03](https://github.com/user-attachments/assets/f3300a88-bb77-4e5e-8e2f-a8995a18d7ed)
+![Screenshot from 2024-10-22 05-36-16](https://github.com/user-attachments/assets/f719b6ab-16ea-45e7-a9c0-e36086a4f581)
+![Screenshot from 2024-10-22 05-39-05](https://github.com/user-attachments/assets/f1553f40-c16a-409c-af71-5976a198297e)
+![Screenshot from 2024-10-22 05-39-27](https://github.com/user-attachments/assets/be6464cb-6d8c-4c2f-9014-f48942def403)
+
+
+![Screenshot from 2024-10-22 05-39-41](https://github.com/user-attachments/assets/544dd974-5e56-4af4-82d4-401ca0a686e8)
+
+![Screenshot from 2024-10-22 05-39-58](https://github.com/user-attachments/assets/7c426f81-93ad-4676-857f-11dfea3cc4ad)
+![Screenshot from 2024-10-21 20-29-10](https://github.com/user-attachments/assets/2e42099a-6985-4b0d-9b06-e5630427acd5)
+
+![Screenshot from 2024-10-22 05-43-49](https://github.com/user-attachments/assets/657b5eae-df33-4c02-affe-c6217bdfeb6d)
+![Screenshot from 2024-10-22 05-44-46](https://github.com/user-attachments/assets/7d39930c-3932-4bae-b37b-27ba4e682d89)
+![Screenshot from 2024-10-21 20-35-00](https://github.com/user-attachments/assets/73b64d40-0616-4000-8e92-e9c721332bf0)
 
 
