@@ -2017,6 +2017,13 @@ The output of the sum 1 to 9 can be observed
 
 
 
+### 1.1. Introduction of open source simulator iverilog
+# Design of RTL:
+RTL (Register Transfer Level) design is the process of translating specifications into a functional representation of a digital circuit. It serves as an intermediary between high-level behavioral design and low-level gate-level design. RTL focuses on the data transfer between registers, abstracting away the specifics of gate and transistor implementations. Typically, RTL designs are described using Hardware Description Languages (HDLs) such as Verilog or VHDL.
+
+# Testbench:
+A test bench is used to provide stimuli to the design under test (DUT) and verify its functionality as specified in the Verilog description. It is written separately and includes the instantiation of the design that needs to be simulated. The test bench facilitates the validation of the design's performance and behavior.
+file:///home/nitheesh-kumar/Pictures/Screenshots/Screenshot%20from%202024-10-22%2008-36-35.png![image](https://github.com/user-attachments/assets/13863f7a-fb04-49c8-9a30-14f0e8732eab)
 
 
 ![Screenshot from 2024-10-22 04-10-45](https://github.com/user-attachments/assets/5e3a9b89-67fb-4560-9db1-dddc6490db2e)
