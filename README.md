@@ -2016,8 +2016,8 @@ The output of the sum 1 to 9 can be observed
 
 
 
-
-### 1.1. Introduction of open source simulator iverilog
+### TASK
+## 1. Introduction of open source simulator iverilog
 # Design of RTL:
 RTL (Register Transfer Level) design is the process of translating specifications into a functional representation of a digital circuit. It serves as an intermediary between high-level behavioral design and low-level gate-level design. RTL focuses on the data transfer between registers, abstracting away the specifics of gate and transistor implementations. Typically, RTL designs are described using Hardware Description Languages (HDLs) such as Verilog or VHDL.
 
