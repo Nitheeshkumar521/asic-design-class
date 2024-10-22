@@ -2133,4 +2133,17 @@ The output of the sum 1 to 9 can be observed
 ![Screenshot from 2024-10-22 06-30-22](https://github.com/user-attachments/assets/a3783b47-e4ac-41ad-abeb-3e4a33c2c2b9)
 
 
+![Screenshot from 2024-10-22 06-41-49](https://github.com/user-attachments/assets/0be84e68-75cb-45dc-b13a-12a5f62ade8a)
+
+
+![Screenshot from 2024-10-22 06-41-58](https://github.com/user-attachments/assets/7f63704f-e12b-420a-af6e-0691183808fd)
+
+
+
+![Screenshot from 2024-10-22 06-55-02](https://github.com/user-attachments/assets/e3e7e6c6-a646-42c2-9aa7-1423f98d6859)
+
+
+![Screenshot from 2024-10-22 06-55-09](https://github.com/user-attachments/assets/a47a7aff-2ed7-47d3-846b-1766ba47b761)
+
+
 
