@@ -2404,7 +2404,10 @@ show
 ![Screenshot from 2024-10-24 08-23-40](https://github.com/user-attachments/assets/ddacaa07-d837-4560-ab6c-71a617bcd1eb)
 
 ![Screenshot from 2024-10-24 08-25-49](https://github.com/user-attachments/assets/6a44e89f-2719-4a47-a9d5-cd291c5673f7)
-![Screenshot from 2024-10-24 06-14-12](https://github.com/user-attachments/assets/95ea92ef-e978-424c-bc86-f1a35c7a083b)
-![Screenshot from 2024-10-24 09-07-38](https://github.com/user-attachments/assets/e6001c85-9671-416f-95f4-5c9b82f04414)
+pre synthesis output waveform O1
+![Screenshot from 2024-10-24 11-53-00](https://github.com/user-attachments/assets/37250615-a74e-4bbe-9bee-daa956d99e02)
+![Screenshot from 2024-10-24 11-54-14](https://github.com/user-attachments/assets/410f388a-b43b-4b6b-8cdf-a3b0eec995a5)
+post synthesis output
+
 Hence the from the above simulations of the waveforms we can find the pre synthesis and the post synthesis are same hence 
 O1=O2
