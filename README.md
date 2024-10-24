@@ -2386,7 +2386,22 @@ show
 
 ![Screenshot from 2024-10-22 08-26-29](https://github.com/user-attachments/assets/630eec1a-7d5d-4f27-a60d-974bae9d12d7)
 
-# Task 10 :
+# Task 10 RISC-V Synthesis for Gate-Level Simulation of BabySoC:
+
+## Synthesis of RISCV Core:
+
+```
+
+yosys
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog rvmyth.v 
+read_verilog clk_gate.v 
+synth -top rvmyth
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib 
+write_verilog -noattr rvmyth_netlist.v
+show rvmyth
+!gedit rvmyth
+```
 ![Screenshot from 2024-10-24 05-11-51](https://github.com/user-attachments/assets/3ebb33fd-0c73-45c2-bd40-b185e769d92e)
 
 
@@ -2401,13 +2416,30 @@ show
 ![Screenshot from 2024-10-24 05-40-45](https://github.com/user-attachments/assets/5f2e153e-bba0-405a-935c-0ba39473e88e)
 
 
+
+
 ![Screenshot from 2024-10-24 08-23-40](https://github.com/user-attachments/assets/ddacaa07-d837-4560-ab6c-71a617bcd1eb)
 
 ![Screenshot from 2024-10-24 08-25-49](https://github.com/user-attachments/assets/6a44e89f-2719-4a47-a9d5-cd291c5673f7)
 pre synthesis output waveform O1
+
+## BabySoC Post Synthesis Simulation:
+### Commands for Gate-Level Simulation:
+```
+cd BabySoC_Simulation
+git clone https://github.com/Subhasis-Sahu/BabySoC_Simulation
+
+```
+### Waveorm of post synthesis simulation:
+```
+cd src/module
+iverilog -o post_synth.out primitives.v sky130_fd_sc_hd.v testbench.v -D POST_SYNTH_SIM
+./post_synth.out
+gtkwave post_synth_sim.vcd
+```
 ![Screenshot from 2024-10-24 11-53-00](https://github.com/user-attachments/assets/37250615-a74e-4bbe-9bee-daa956d99e02)
 ![Screenshot from 2024-10-24 11-54-14](https://github.com/user-attachments/assets/410f388a-b43b-4b6b-8cdf-a3b0eec995a5)
-post synthesis output
+post synthesis output waveform
 
 Hence the from the above simulations of the waveforms we can find the pre synthesis and the post synthesis are same hence 
 O1=O2
