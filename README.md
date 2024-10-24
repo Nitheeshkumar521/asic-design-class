@@ -2401,3 +2401,7 @@ show
 ![Screenshot from 2024-10-24 05-40-45](https://github.com/user-attachments/assets/5f2e153e-bba0-405a-935c-0ba39473e88e)
 
 
+![Screenshot from 2024-10-24 08-23-40](https://github.com/user-attachments/assets/ddacaa07-d837-4560-ab6c-71a617bcd1eb)
+
+![Screenshot from 2024-10-24 08-25-49](https://github.com/user-attachments/assets/6a44e89f-2719-4a47-a9d5-cd291c5673f7)
+![Screenshot from 2024-10-24 06-14-12](https://github.com/user-attachments/assets/95ea92ef-e978-424c-bc86-f1a35c7a083b)
