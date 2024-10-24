@@ -2438,8 +2438,12 @@ iverilog -o post_synth.out primitives.v sky130_fd_sc_hd.v testbench.v -D POST_SY
 gtkwave post_synth_sim.vcd
 ```
 ![Screenshot from 2024-10-24 11-53-00](https://github.com/user-attachments/assets/37250615-a74e-4bbe-9bee-daa956d99e02)
+### post synthesis output waveform
 ![Screenshot from 2024-10-24 11-54-14](https://github.com/user-attachments/assets/410f388a-b43b-4b6b-8cdf-a3b0eec995a5)
-post synthesis output waveform
+
+### post synthesis output waveform with atleast 20 cycles
+
+![Screenshot from 2024-10-24 12-51-25](https://github.com/user-attachments/assets/af8df2c9-705e-46d9-a42a-959404393067)
 
 Hence the from the above simulations of the waveforms we can find the pre synthesis and the post synthesis are same hence 
 O1=O2
