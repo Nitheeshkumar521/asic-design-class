@@ -2402,10 +2402,10 @@ write_verilog -noattr rvmyth_netlist.v
 show rvmyth
 !gedit rvmyth
 ```
-![Screenshot from 2024-10-24 05-11-51](https://github.com/user-attachments/assets/3ebb33fd-0c73-45c2-bd40-b185e769d92e)
+![Screenshot from 2024-10-24 14-14-38](https://github.com/user-attachments/assets/7bb865ec-f173-47fe-bf8c-a2e3ec0867cd)
 
+![Screenshot from 2024-10-24 14-15-55](https://github.com/user-attachments/assets/61fa22ee-13eb-483d-949d-663e1deb2bd5)
 
-![Screenshot from 2024-10-24 05-11-51](https://github.com/user-attachments/assets/8fbad187-412e-417b-b63b-b82ac9119218)
 
 
 
@@ -2430,7 +2430,7 @@ cd BabySoC_Simulation
 git clone https://github.com/Subhasis-Sahu/BabySoC_Simulation
 
 ```
-### Waveorm of post synthesis simulation:
+### Waveform of post synthesis simulation:
 ```
 cd src/module
 iverilog -o post_synth.out primitives.v sky130_fd_sc_hd.v testbench.v -D POST_SYNTH_SIM
