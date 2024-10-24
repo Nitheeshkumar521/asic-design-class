@@ -2422,6 +2422,10 @@ show rvmyth
 
 ![Screenshot from 2024-10-24 08-25-49](https://github.com/user-attachments/assets/6a44e89f-2719-4a47-a9d5-cd291c5673f7)
 pre synthesis output waveform O1
+![Screenshot from 2024-10-24 15-04-34](https://github.com/user-attachments/assets/e805c255-8faf-42fb-a9a5-f810f9f9f301)
+### pre synthesis outpur waveform with 20 cycles
+
+
 
 ## BabySoC Post Synthesis Simulation:
 ### Commands for Gate-Level Simulation:
@@ -2441,7 +2445,7 @@ gtkwave post_synth_sim.vcd
 ### post synthesis output waveform
 ![Screenshot from 2024-10-24 11-54-14](https://github.com/user-attachments/assets/410f388a-b43b-4b6b-8cdf-a3b0eec995a5)
 
-### post synthesis output waveform with atleast 20 cycles
+### post synthesis output waveform with  20 cycles
 
 ![Screenshot from 2024-10-24 12-51-25](https://github.com/user-attachments/assets/af8df2c9-705e-46d9-a42a-959404393067)
 
