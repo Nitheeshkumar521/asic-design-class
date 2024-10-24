@@ -2448,6 +2448,7 @@ gtkwave post_synth_sim.vcd
 ### post synthesis output waveform with  20 cycles
 
 ![Screenshot from 2024-10-24 12-51-25](https://github.com/user-attachments/assets/af8df2c9-705e-46d9-a42a-959404393067)
+![Screenshot from 2024-10-24 15-17-43](https://github.com/user-attachments/assets/dd029461-7b19-4ebd-93af-33abefab7bf3)
 
 Hence the from the above simulations of the waveforms we can find the pre synthesis and the post synthesis are same hence 
 O1=O2
