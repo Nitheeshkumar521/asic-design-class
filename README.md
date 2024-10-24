@@ -2416,7 +2416,7 @@ show rvmyth
 ![Screenshot from 2024-10-24 05-40-45](https://github.com/user-attachments/assets/5f2e153e-bba0-405a-935c-0ba39473e88e)
 
 
-
+## Pre Synthesis Simulation:
 
 ![Screenshot from 2024-10-24 08-23-40](https://github.com/user-attachments/assets/ddacaa07-d837-4560-ab6c-71a617bcd1eb)
 
