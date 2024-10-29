@@ -2535,6 +2535,9 @@ report_checks -path_delay min_max -format full_clock_expanded -digits 4
 
 ## Timing Report:
 ![Screenshot from 2024-10-28 20-53-26](https://github.com/user-attachments/assets/65e38c98-a702-4e3b-80e9-add989ba4488)
+### Setup time analysis:
 ![Screenshot from 2024-10-28 20-53-32](https://github.com/user-attachments/assets/c045e4db-7c0d-4216-8a3e-5f7f8b2fe848)
+### Hold time analysis:
 ![Screenshot from 2024-10-28 20-54-01](https://github.com/user-attachments/assets/2d76df19-dc06-4c04-9815-37ffc4f6743b)
+clock period of 9.55ns
 
