@@ -2452,3 +2452,89 @@ gtkwave post_synth_sim.vcd
 
 Hence the from the above simulations of the waveforms we can find the pre synthesis and the post synthesis are same hence 
 O1=O2
+
+
+# Task 11 Static Timing Analysis on RISCV Core using Custom Clock Time Period of 9.55ns:
+
+## Tools Installation:
+```
+cd
+tar xvfz cudd-3.0.0.tar.gz
+cd cudd-3.0.0
+./configure
+make
+```
+### Open sta
+```
+cd
+sudo apt-get install cmake clang gcc tcl swig bison flex
+
+git clone https://github.com/parallaxsw/OpenSTA.git
+cd OpenSTA
+cmake -DCUDD_DIR=/home/likith/cudd-3.0.0
+make
+app/sta
+```
+![Screenshot from 2024-10-28 20-28-27](https://github.com/user-attachments/assets/b03e8803-3080-49df-9fce-11bb63522aaf)
+![Screenshot from 2024-10-28 20-39-51](https://github.com/user-attachments/assets/1cd1ebee-5f35-4260-9ede-c6a48b05f362)
+
+
+## SDC File Configuration:
+```
+# Define the clock period
+set PERIOD 9.55ns
+
+# Set timing units to nanoseconds (ns)
+set_units -time ns
+
+# Create a clock named 'clk' with a period of 9.55nsns, based on the pll/CLK pin
+create_clock [get_pins {pll/CLK}] -name clk -period $PERIOD
+
+# Define setup uncertainty as 5% of the clock period
+set_clock_uncertainty -setup [expr $PERIOD * 0.05] [get_clocks clk]
+
+# Define clock transition time as 5% of the clock period
+set_clock_transition [expr $PERIOD * 0.05] [get_clocks clk]
+
+# Define hold uncertainty as 8% of the clock period
+set_clock_uncertainty -hold [expr $PERIOD * 0.08] [get_clocks clk]
+
+# Define input transition times for the specified ports
+set_input_transition [expr $PERIOD * 0.08] [get_ports ENb_CP]
+set_input_transition [expr $PERIOD * 0.08] [get_ports ENb_VCO]
+set_input_transition [expr $PERIOD * 0.08] [get_ports REF]
+set_input_transition [expr $PERIOD * 0.08] [get_ports VCO_IN]
+set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
+```
+
+## Timing Analysis:
+```
+cd VSDBabySoc/src
+sta
+
+# Load Liberty files for cell delays and constraints
+read_liberty -min ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -min ./lib/avsdpll.lib
+read_liberty -min ./lib/avsddac.lib
+read_liberty -max ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -max ./lib/avsdpll.lib
+read_liberty -max ./lib/avsddac.lib
+
+# Load the synthesized Verilog file
+read_verilog ../output/synth/vsdbabysoc.synth.v
+
+# Link the design for analysis
+link_design vsdbabysoc
+
+# Apply timing constraints from the SDC file
+read_sdc ./sdc/vsdbabysoc_synthesis.sdc
+
+# Generate a detailed timing report including min/max delays
+report_checks -path_delay min_max -format full_clock_expanded -digits 4
+```
+
+## Timing Report:
+![Screenshot from 2024-10-28 20-53-26](https://github.com/user-attachments/assets/65e38c98-a702-4e3b-80e9-add989ba4488)
+![Screenshot from 2024-10-28 20-53-32](https://github.com/user-attachments/assets/c045e4db-7c0d-4216-8a3e-5f7f8b2fe848)
+![Screenshot from 2024-10-28 20-54-01](https://github.com/user-attachments/assets/2d76df19-dc06-4c04-9815-37ffc4f6743b)
+
