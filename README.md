@@ -2553,11 +2553,22 @@ clock period of 9.55ns
 
 
 ![Screenshot from 2024-11-05 14-24-10](https://github.com/user-attachments/assets/bfeb8dfe-dda3-46b5-b3c6-a57e9bd1d947)
+![Screenshot from 2024-11-05 14-39-19](https://github.com/user-attachments/assets/2c092d4c-4254-4945-b3e8-c0614d3692f3)
+![Screenshot from 2024-11-05 14-39-30](https://github.com/user-attachments/assets/fb74a562-4d55-4046-82ac-d16612263131)
+
+
 
 
 
 ![Screenshot from 2024-11-05 14-25-02](https://github.com/user-attachments/assets/277ea22f-f5df-47cb-a069-25bac3c0ae6f)
+![Screenshot from 2024-11-05 14-39-41](https://github.com/user-attachments/assets/7304b9d9-6a57-4105-a814-88975da97350)
+
+
+
 
 ![Screenshot from 2024-11-05 14-32-18](https://github.com/user-attachments/assets/d1ba7ea5-266c-47f9-9c8c-24507ce4779a)
+
+![Screenshot from 2024-11-05 14-39-49](https://github.com/user-attachments/assets/5b1a8fc0-8821-4d49-a6e8-bcececbd037d)
+
 
 ![Screenshot from 2024-11-05 14-36-04](https://github.com/user-attachments/assets/182ef318-e595-48b8-b0d2-a368b3f887b9)
