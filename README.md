@@ -2571,9 +2571,10 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 
 
+![Screenshot from 2024-11-05 15-05-31](https://github.com/user-attachments/assets/2cb388f1-be0e-49ee-83ee-64c0b7248c73)
 
 
-![Screenshot from 2024-11-05 14-57-14](https://github.com/user-attachments/assets/badd152e-a2d5-49c8-a200-89e8bd8b5782)
+
 
 ## Analysis Report:
 ### table of slack report:
