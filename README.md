@@ -2550,6 +2550,11 @@ clock period of 9.55ns
 
 ![Screenshot from 2024-11-05 14-07-58](https://github.com/user-attachments/assets/aa0e57cf-ac73-4f7d-b637-bf0f68c3b4a3)
 
+
+
+
+![Screenshot from 2024-11-05 14-52-04](https://github.com/user-attachments/assets/ed9e95b7-a232-4c51-9a44-41590804f584)
+
 ![Screenshot from 2024-11-05 14-39-19](https://github.com/user-attachments/assets/2c092d4c-4254-4945-b3e8-c0614d3692f3)
 
 ![Screenshot from 2024-11-05 14-24-10](https://github.com/user-attachments/assets/bfeb8dfe-dda3-46b5-b3c6-a57e9bd1d947)
