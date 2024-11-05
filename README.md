@@ -2541,3 +2541,23 @@ report_checks -path_delay min_max -format full_clock_expanded -digits 4
 ![Screenshot from 2024-10-28 20-54-01](https://github.com/user-attachments/assets/2d76df19-dc06-4c04-9815-37ffc4f6743b)
 clock period of 9.55ns
 
+
+# Lab11 PVT Corner Analysis for Synthesized VSDBabySoC using OpenSTA:
+
+
+![Screenshot from 2024-11-05 13-55-05](https://github.com/user-attachments/assets/3bf0b1b3-cff4-4d89-a222-76c1152e32f6)
+
+
+![Screenshot from 2024-11-05 14-07-58](https://github.com/user-attachments/assets/aa0e57cf-ac73-4f7d-b637-bf0f68c3b4a3)
+
+
+
+![Screenshot from 2024-11-05 14-24-10](https://github.com/user-attachments/assets/bfeb8dfe-dda3-46b5-b3c6-a57e9bd1d947)
+
+
+
+![Screenshot from 2024-11-05 14-25-02](https://github.com/user-attachments/assets/277ea22f-f5df-47cb-a069-25bac3c0ae6f)
+
+![Screenshot from 2024-11-05 14-32-18](https://github.com/user-attachments/assets/d1ba7ea5-266c-47f9-9c8c-24507ce4779a)
+
+![Screenshot from 2024-11-05 14-36-04](https://github.com/user-attachments/assets/182ef318-e595-48b8-b0d2-a368b3f887b9)
