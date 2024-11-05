@@ -2569,8 +2569,7 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 ```
 
 
-
-![Uploading Screenshot from 2024-11-05 14-57-14.png…]()
+![Screenshot from 2024-11-05 14-57-14](https://github.com/user-attachments/assets/b6b5f2e5-bb37-4c62-8f57-8f9ea7ab9e9e)
 
 
 
