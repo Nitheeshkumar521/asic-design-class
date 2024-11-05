@@ -2570,8 +2570,7 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 
 
-
-![Screenshot from 2024-11-05 15-05-31](https://github.com/user-attachments/assets/2cb388f1-be0e-49ee-83ee-64c0b7248c73)
+![Uploading Screenshot from 2024-11-05 14-57-14.png…]()
 
 
 
@@ -2581,7 +2580,9 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 
 
-![Screenshot from 2024-11-05 14-52-04](https://github.com/user-attachments/assets/ed9e95b7-a232-4c51-9a44-41590804f584)
+
+![Screenshot from 2024-11-05 15-05-31](https://github.com/user-attachments/assets/2cb388f1-be0e-49ee-83ee-64c0b7248c73)
+
 
 ## Total Negative Slack:
 
