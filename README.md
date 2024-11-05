@@ -2544,22 +2544,50 @@ clock period of 9.55ns
 
 # Lab11 PVT Corner Analysis for Synthesized VSDBabySoC using OpenSTA:
 
+## List of library files for PVT corners:
+
+
 
 ![Screenshot from 2024-11-05 13-55-05](https://github.com/user-attachments/assets/3bf0b1b3-cff4-4d89-a222-76c1152e32f6)
 
 
 ![Screenshot from 2024-11-05 14-07-58](https://github.com/user-attachments/assets/aa0e57cf-ac73-4f7d-b637-bf0f68c3b4a3)
 
+## SDC constraints for VSDBabySoC:
+```
+set PERIOD 9.55
+set_units -time ns
+create_clock [get_ports {clk}] -name clk -period $PERIOD
+set_clock_uncertainty -setup  [expr $PERIOD * 0.05] [get_clocks clk]
+set_clock_transition [expr $PERIOD * 0.05] [get_clocks clk]
+set_clock_uncertainty -hold [expr $PERIOD * 0.08] [get_clocks clk]
+set_input_transition [expr $PERIOD * 0.08] [get_ports ENb_CP]
+set_input_transition [expr $PERIOD * 0.08] [get_ports ENb_VCO]
+set_input_transition [expr $PERIOD * 0.08] [get_ports REF]
+set_input_transition [expr $PERIOD * 0.08] [get_ports VCO_IN]
+set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
+```
+
+
+
+
 
 
 ![Screenshot from 2024-11-05 14-57-14](https://github.com/user-attachments/assets/badd152e-a2d5-49c8-a200-89e8bd8b5782)
+
+## Analysis Report:
+### table of slack report:
 
 
 
 ![Screenshot from 2024-11-05 14-52-04](https://github.com/user-attachments/assets/ed9e95b7-a232-4c51-9a44-41590804f584)
 
+## Total Negative Slack:
+
 
 ![Screenshot from 2024-11-05 14-24-10](https://github.com/user-attachments/assets/bfeb8dfe-dda3-46b5-b3c6-a57e9bd1d947)
+
+## Worst (Negative slack)Setup Slack:
 
 
 
@@ -2569,11 +2597,17 @@ clock period of 9.55ns
 
 ![Screenshot from 2024-11-05 14-25-02](https://github.com/user-attachments/assets/277ea22f-f5df-47cb-a069-25bac3c0ae6f)
 
+## Worst Setup Slack:
+
 
 
 
 
 ![Screenshot from 2024-11-05 14-32-18](https://github.com/user-attachments/assets/d1ba7ea5-266c-47f9-9c8c-24507ce4779a)
+
+## Worst Hold Slack:
+
+
 
 
 
