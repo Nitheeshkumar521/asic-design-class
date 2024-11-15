@@ -2703,8 +2703,10 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 ![Screenshot from 2024-11-14 02-52-26](https://github.com/user-attachments/assets/df90bea1-465c-4b07-8efa-d152805bb735)
 ![Screenshot from 2024-11-14 03-00-20](https://github.com/user-attachments/assets/35ca2426-4533-45d0-b9c7-2daff8bc37c8)
 
-# 4
+
 ![Screenshot from 2024-11-14 03-03-59](https://github.com/user-attachments/assets/e90469f8-47b4-458d-a7ea-926816bc40d6)
+
+## DAY4: Pre-layout timing analysis and importance of good clock tree:
 ![Screenshot from 2024-11-14 03-31-18](https://github.com/user-attachments/assets/92b7c762-034f-466c-adb3-a42bf60386bd)
 ![Screenshot from 2024-11-14 03-41-29](https://github.com/user-attachments/assets/cf627c66-0096-409c-af77-719419328321)
 ![Screenshot from 2024-11-14 03-45-33](https://github.com/user-attachments/assets/fb334962-445f-4b4e-a5cf-a3d873b4b17c)
