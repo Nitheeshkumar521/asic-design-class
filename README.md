@@ -2824,3 +2824,15 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 ![Screenshot from 2024-11-15 04-46-19](https://github.com/user-attachments/assets/7193ea52-25aa-4a73-8896-a854f4f78c9d)
 ![Screenshot from 2024-11-15 04-46-58](https://github.com/user-attachments/assets/9bddf29a-d92e-4fd4-bda5-539e39a6c58c)
 
+![Screenshot from 2024-11-15 05-01-50](https://github.com/user-attachments/assets/b0fc944b-0827-4433-b95f-98e8ecd1c781)
+![Screenshot from 2024-11-15 05-01-53](https://github.com/user-attachments/assets/1c70f5af-fffb-4be5-93f0-d542d38f6673)
+
+![Screenshot from 2024-11-15 05-02-17](https://github.com/user-attachments/assets/cdde7f7b-0e72-4faf-ae7f-09f12b713fee)
+![Screenshot from 2024-11-15 05-02-23](https://github.com/user-attachments/assets/2b613ffa-fe8b-4df0-8be7-af415ce99ecf)
+![Screenshot from 2024-11-15 05-02-48](https://github.com/user-attachments/assets/b0ea8457-a90b-4414-becb-da72dc5623a2)
+![Screenshot from 2024-11-15 05-04-05](https://github.com/user-attachments/assets/2ba4801c-f8fe-468d-b591-365e61dacf56)
+![Screenshot from 2024-11-15 05-11-29](https://github.com/user-attachments/assets/6537edf0-32c8-4589-8310-484688a03921)
+![Screenshot from 2024-11-15 05-13-23](https://github.com/user-attachments/assets/2ef22bf1-6d4b-4d12-bb44-95e2df8d2f48)
+![Screenshot from 2024-11-15 05-16-20](https://github.com/user-attachments/assets/8feecd43-4d63-4122-ab19-4d0c5e488ce1)
+![Screenshot from 2024-11-15 05-16-49](https://github.com/user-attachments/assets/c7aebb12-8da9-4d09-aba5-63010e91d810)
+
