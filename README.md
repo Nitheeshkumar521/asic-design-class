@@ -2737,6 +2737,9 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 ![Screenshot from 2024-11-14 05-17-42](https://github.com/user-attachments/assets/f5ac581c-ca64-4955-a30f-e86293f8898d)
 
 
+
+![Screenshot 2024-11-15 042212](https://github.com/user-attachments/assets/6861825b-f770-47d2-96e0-0aa9f26e6898)
+
 ![Screenshot from 2024-11-14 06-06-43](https://github.com/user-attachments/assets/94a5d427-89f0-4595-a115-701ee6fff0f4)
 
 
