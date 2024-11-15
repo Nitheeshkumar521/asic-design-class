@@ -2771,5 +2771,30 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 ![Screenshot from 2024-11-15 02-32-14](https://github.com/user-attachments/assets/f0b406ae-05b4-44d8-8fbf-aa244c45e69d)
 
 
+![Screenshot from 2024-11-15 02-33-34](https://github.com/user-attachments/assets/c0dcd6ac-bbec-4ff0-8c49-bf84b354304c)
 
+![Screenshot from 2024-11-15 02-34-20](https://github.com/user-attachments/assets/58f9e915-e803-4972-9297-e9c4b7df255f)
+![Screenshot from 2024-11-15 02-34-37](https://github.com/user-attachments/assets/79f4c95b-7dd5-45dc-87bf-d8cf3fd9cffc)
+![Screenshot from 2024-11-15 02-35-10](https://github.com/user-attachments/assets/1b0d40fe-e477-4cf0-b354-938c2e693332)
 
+![Screenshot from 2024-11-15 02-35-21](https://github.com/user-attachments/assets/b75cfa7d-8324-48d6-ac26-56c51a3e1a9f)
+
+![Screenshot from 2024-11-15 02-36-29](https://github.com/user-attachments/assets/00f67f10-ec8a-47db-a1e1-3b18055d1e37)
+![Screenshot from 2024-11-15 02-36-58](https://github.com/user-attachments/assets/b5ec8a7a-02bf-4266-94d5-97da8097ccc7)
+![Screenshot from 2024-11-15 02-38-05](https://github.com/user-attachments/assets/179ef2a6-21fd-43d3-bce5-a657a9bf087f)
+
+![Screenshot from 2024-11-15 02-39-12](https://github.com/user-attachments/assets/ac588e98-d9e9-44f5-b4b0-400a8f4dc7fc)
+![Screenshot from 2024-11-15 02-39-42](https://github.com/user-attachments/assets/b4d3f924-0abc-4cb0-a2b3-36c714c0b4d6)
+![Screenshot from 2024-11-15 02-41-41](https://github.com/user-attachments/assets/78f24827-f52a-463c-b01b-836059af78b1)
+![Screenshot from 2024-11-15 02-42-02](https://github.com/user-attachments/assets/cb738f13-5d9d-4d69-b1c1-e78fd58bcd2a)
+![Screenshot from 2024-11-15 02-45-56](https://github.com/user-attachments/assets/457a08ce-4912-4e7c-8759-c880525a54a7)
+
+![Screenshot from 2024-11-15 02-50-52](https://github.com/user-attachments/assets/6ff1438e-ff75-4f28-a419-0188311e777d)
+![Screenshot from 2024-11-15 02-55-33](https://github.com/user-attachments/assets/da2c9fc3-1235-456a-8c1c-976916a16643)
+
+![Screenshot from 2024-11-15 02-58-29](https://github.com/user-attachments/assets/778c35dd-d51d-4e91-a636-f2a1e58793b7)
+![Screenshot from 2024-11-15 03-00-45](https://github.com/user-attachments/assets/c0d0c104-2249-47aa-9c54-c6606ac717d8)
+![Screenshot from 2024-11-15 03-04-23](https://github.com/user-attachments/assets/aef72dba-fdee-4054-92de-64d2ef062330)
+![Screenshot from 2024-11-15 03-06-38](https://github.com/user-attachments/assets/880ee2f0-a5d0-4e01-9c06-3db4ce3e2313)
+![Screenshot from 2024-11-15 03-06-56](https://github.com/user-attachments/assets/b6d157d7-a4c2-47c1-a878-52f670ac0b14)
+![Screenshot from 2024-11-15 03-07-15](https://github.com/user-attachments/assets/66c95864-10d2-4983-927b-3e90d232309c)
