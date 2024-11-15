@@ -2625,6 +2625,8 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 ![day1-5](https://github.com/user-attachments/assets/449a9a73-61de-4039-b917-0b7ef8ee9f63)
 
+## DAY2:Good floorplan vs bad floorplan and introduction to library cells:
+
 ![day2-1](https://github.com/user-attachments/assets/64bd4fa8-4cc2-49a7-94ad-434717f37ad3)
 ![day2-3](https://github.com/user-attachments/assets/c6dc5725-c942-4deb-a10b-447f8cc6bece)
 ![day2-4](https://github.com/user-attachments/assets/380a25eb-b01e-406a-80e7-77aab207434e)
@@ -2643,6 +2645,7 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 
 
+## DAY 3: Design library cell using Magic Layout and ngspice characterization:
 ![day3-1](https://github.com/user-attachments/assets/812a1add-f96d-4f97-a702-b1d17ec77fc2)
 ![day3-2](https://github.com/user-attachments/assets/3469b927-de33-4fdc-9b54-3448a7152455)
 
