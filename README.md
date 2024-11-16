@@ -3081,24 +3081,112 @@ ext2spice
 ##### Screenshot of tkcon window after running above commands
 ##### Screenshot of created spice file
 
+####  Post-layout ngspice simulations.
+
+Commands for ngspice simulation
+
+```bash
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
+
+# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+plot y vs time a
+```
+
+Screenshots of ngspice run
+
 
 ![Screenshot from 2024-11-13 23-43-16](https://github.com/user-attachments/assets/2314bdb2-8b91-40c0-af96-0bdd766eeed7)
 ![Screenshot from 2024-11-13 23-44-35](https://github.com/user-attachments/assets/756711f9-a6cb-420e-8890-27f1e066832b)
+Screenshot of generated plot
 ![Screenshot from 2024-11-14 00-30-23](https://github.com/user-attachments/assets/e2bfcba3-46f6-4b6d-8b74-61cc214b5795)
 ![Screenshot from 2024-11-14 00-33-47](https://github.com/user-attachments/assets/498144bb-ea24-4b69-9d32-f4a49c09c3b4)
+
+Rise transition time calculation
+
+```math
+Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ taken\ for\ output\ to\ rise\ to\ 20\%
+```
+```math
+20\%\ of\ output = 660\ mV
+```
+```math
+80\%\ of\ output = 2.64\ V
+```
+
+20% Screenshots
 ![Screenshot from 2024-11-14 00-35-47](https://github.com/user-attachments/assets/1525c458-d009-473d-89d9-28bccd8ee974)
 ![Screenshot from 2024-11-14 00-36-30](https://github.com/user-attachments/assets/dca148e8-58a8-4f4c-9e55-97478d6ccd51)
+
+80% Screenshots
 ![Screenshot from 2024-11-14 00-43-59](https://github.com/user-attachments/assets/b6692420-fb63-4800-a258-021ef17c3ab3)
 ![Screenshot from 2024-11-14 00-46-06](https://github.com/user-attachments/assets/5033c3e1-c2f1-4dae-aff6-ba5b9b6ad4e6)
+
+
+```math
+Rise\ transition\ time = 2.24638 - 2.18242 = 0.06396\ ns = 63.96\ ps
+```
+
+Fall transition time calculation
+
+```math
+Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ taken\ for\ output\ to\ fall\ to\ 80\%
+```
+```math
+20\%\ of\ output = 660\ mV
+```
+```math
+80\%\ of\ output = 2.64\ V
+```
+
+20% Screenshots
 ![Screenshot from 2024-11-14 00-49-50](https://github.com/user-attachments/assets/5015c7dc-b8a6-4af9-86b6-8c803da80079)
 
 ![Screenshot from 2024-11-14 00-49-50](https://github.com/user-attachments/assets/c75cd46f-9984-4598-89ae-b8612d829aa2)
+
+
 ![Screenshot from 2024-11-14 00-50-53](https://github.com/user-attachments/assets/500bbb7d-9a15-4c61-a4bc-ae464d88b83f)
+
+80% Screenshots
 
 ![Screenshot from 2024-11-14 01-00-46](https://github.com/user-attachments/assets/9fcd3410-29bc-48fc-9b5a-2da5b1a25210)
 ![Screenshot from 2024-11-14 01-01-11](https://github.com/user-attachments/assets/199653c2-7573-4a56-bbbe-4b8890d98422)
+
+```math
+Fall\ transition\ time = 4.0955 - 4.0536 = 0.0419\ ns = 41.9\ ps
+```
+
+Rise Cell Delay Calculation
+
+```math
+Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ for\ input\ to\ fall\ to\ 50\%
+```
+```math
+50\%\ of\ 3.3\ V = 1.65\ V
+```
+
+50% Screenshots
+
+
 ![Screenshot from 2024-11-14 01-08-18](https://github.com/user-attachments/assets/38f89248-cd56-4829-bb62-c971a7fc95f8)
 ![Screenshot from 2024-11-14 01-08-26](https://github.com/user-attachments/assets/0e23ff26-ff64-4cba-9c18-a9d485d58582)
+
+
+```math
+Rise\ Cell\ Delay = 2.21144 - 2.15008 = 0.06136\ ns = 61.36\ ps
+```
+
+Fall Cell Delay Calculation
+
+```math
+Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ for\ input\ to\ rise\ to\ 50\%
+```
+```math
+50\%\ of\ 3.3\ V = 1.65\ V
+```
+
+50% Screenshots
+
 ![Screenshot from 2024-11-14 01-12-57](https://github.com/user-attachments/assets/878f0910-8336-4753-90e5-2326d638ad05)
 ![Screenshot from 2024-11-14 01-13-14](https://github.com/user-attachments/assets/b446df8c-055a-4c22-9394-44df493ec0fd)
 
