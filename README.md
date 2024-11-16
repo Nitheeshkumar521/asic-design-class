@@ -3310,15 +3310,35 @@ Incorrectly implemented nwell.4 complex rule correction
 Screenshot of nwell rules
 ![image](https://github.com/user-attachments/assets/afab3de9-cc69-436b-95d4-2c47d52bfd32)
 
-
+Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell
 
 
 ![Screenshot from 2024-11-14 02-51-04](https://github.com/user-attachments/assets/d3c57be3-3655-4696-9e3a-c04cedd89023)
+New commands inserted in sky130A.tech file to update drc
 ![Screenshot from 2024-11-14 02-52-26](https://github.com/user-attachments/assets/df90bea1-465c-4b07-8efa-d152805bb735)
 ![Screenshot from 2024-11-14 03-00-20](https://github.com/user-attachments/assets/35ca2426-4533-45d0-b9c7-2daff8bc37c8)
 
+Commands to run in tkcon window
+
+```tcl
+# Loading updated tech file
+tech load sky130A.tech
+
+# Change drc style to drc full
+drc style drc(full)
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+
+
 
 ![Screenshot from 2024-11-14 03-03-59](https://github.com/user-attachments/assets/e90469f8-47b4-458d-a7ea-926816bc40d6)
+![image](https://github.com/user-attachments/assets/6ae46224-df22-4b8c-b3ae-49bf4bdab794)
+
 
 ## DAY4: Pre-layout timing analysis and importance of good clock tree:
 ![Screenshot from 2024-11-14 03-31-18](https://github.com/user-attachments/assets/92b7c762-034f-466c-adb3-a42bf60386bd)
