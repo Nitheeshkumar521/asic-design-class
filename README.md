@@ -3248,6 +3248,21 @@ New commands inserted in sky130A.tech file to update drc
 
 ![Screenshot from 2024-11-14 01-49-36](https://github.com/user-attachments/assets/e4436d80-2311-470a-9fe5-5744125bcceb)
 
+Commands to run in tkcon window
+
+```tcl
+# Loading updated tech file
+tech load sky130A.tech
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+
+
+
 ![Screenshot from 2024-11-14 02-15-49](https://github.com/user-attachments/assets/e1bb2bd7-746b-47b6-a81a-9dfa183c8dca)
 ![Screenshot from 2024-11-14 02-38-08](https://github.com/user-attachments/assets/3207aede-b99a-4beb-be1e-fff1219751f0)
 
