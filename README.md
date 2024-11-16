@@ -3942,10 +3942,13 @@ Screenshot of commands run
 
 
 
+![Screenshot from 2024-11-17 03-06-32](https://github.com/user-attachments/assets/d1787871-42e5-4b96-bc30-3e32119644a2)
+
+
+![Screenshot from 2024-11-17 03-15-22](https://github.com/user-attachments/assets/9e8e31ad-689f-4a29-87c6-ff6d6ae9417c)
 
 
 
-![Screenshot from 2024-11-15 02-55-33](https://github.com/user-attachments/assets/da2c9fc3-1235-456a-8c1c-976916a16643)
 
 
 Since we confirmed that netlist is replaced and will be loaded in PnR but since we want to follow up on the earlier 0 violation design we are continuing with the clean design to further stages
@@ -4154,7 +4157,7 @@ Screenshots of commands run and timing report generated
 ![Screenshot from 2024-11-15 05-50-40](https://github.com/user-attachments/assets/34bcbc79-fce2-4191-988e-aabeaa20496a)
 
 
-## Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA (25/03/2024 - 26/03/2024)
+## Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA
 
 ### Theory
 
