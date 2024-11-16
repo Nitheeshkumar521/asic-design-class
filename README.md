@@ -3271,7 +3271,8 @@ drc why
 Screenshot of difftap rules
 
 
-![Screenshot 2024-11-16 134503](https://github.com/user-attachments/assets/dd26b299-2222-435b-9a72-ad09cf0dc20d)
+![image](https://github.com/user-attachments/assets/53df2063-71db-4903-8afe-a1edac785845)
+
 Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u
 
 
@@ -3302,6 +3303,14 @@ drc why
 
 ![Screenshot from 2024-11-14 02-48-34](https://github.com/user-attachments/assets/63c590f4-0d3c-44ba-a5a2-6c941cd7e853)
 ![image](https://github.com/user-attachments/assets/de2c61de-bb13-4df5-9642-f2f727ffd49c)
+
+
+Incorrectly implemented nwell.4 complex rule correction
+
+Screenshot of nwell rules
+![image](https://github.com/user-attachments/assets/afab3de9-cc69-436b-95d4-2c47d52bfd32)
+
+
 
 
 ![Screenshot from 2024-11-14 02-51-04](https://github.com/user-attachments/assets/d3c57be3-3655-4696-9e3a-c04cedd89023)
