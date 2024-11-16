@@ -2617,6 +2617,22 @@ set_input_transition [expr $PERIOD * 0.08] [get_ports VREFH]
 
 # Advanced Physical Design using OpenLane:
 # DAY1  Inception of open-source EDA, OpenLANE and Sky130 PDK:-
+
+
+# Digital VLSI SoC Design and Planning
+
+![Static Badge](https://img.shields.io/badge/OS-linux-orange)
+![Static Badge](https://img.shields.io/badge/EDA%20Tools-OpenLANE--Flow%2C_Yosys%2C_abc%2C_OpenROAD%2C_TritonRoute%2C_OpenSTA%2C_magic%2C_netgen%2C_GUNA-navy)
+![Static Badge](https://img.shields.io/badge/languages-verilog%2C_bash%2C_TCL-crimson)
+![GitHub last commit](https://img.shields.io/github/last-commit/fayizferosh/soc-design-and-planning-nasscom-vsd)
+![GitHub language count](https://img.shields.io/github/languages/count/fayizferosh/soc-design-and-planning-nasscom-vsd)
+![GitHub top language](https://img.shields.io/github/languages/top/fayizferosh/soc-design-and-planning-nasscom-vsd)
+![GitHub repo size](https://img.shields.io/github/repo-size/fayizferosh/soc-design-and-planning-nasscom-vsd)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fayizferosh/soc-design-and-planning-nasscom-vsd)
+![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/fayizferosh/soc-design-and-planning-nasscom-vsd)
+<!---
+Comments
+-->
 ![Screenshot from 2024-11-15 05-56-08](https://github.com/user-attachments/assets/7566c129-d4ea-460f-9078-b00644f1b2d4)
 ![Screenshot from 2024-11-15 05-56-15](https://github.com/user-attachments/assets/a7c52520-bab3-4b99-adac-4b4b5c28c5a3)
 ![Screenshot from 2024-11-15 06-11-22](https://github.com/user-attachments/assets/6321117b-302b-4a24-9907-9c6b2a8219b9)
