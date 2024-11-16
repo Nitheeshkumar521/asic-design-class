@@ -3650,7 +3650,7 @@ Screenshot of placement def in magic
 ![Screenshot from 2024-11-14 05-17-42](https://github.com/user-attachments/assets/f5ac581c-ca64-4955-a30f-e86293f8898d)
 
 
-
+Screenshot of custom inverter inserted in placement def with proper abutment
 ![Screenshot 2024-11-15 042212](https://github.com/user-attachments/assets/6861825b-f770-47d2-96e0-0aa9f26e6898)
 
 ![Screenshot from 2024-11-14 06-06-43](https://github.com/user-attachments/assets/94a5d427-89f0-4595-a115-701ee6fff0f4)
@@ -3658,6 +3658,11 @@ Screenshot of placement def in magic
 
 
 ![Screenshot from 2024-11-15 00-50-55](https://github.com/user-attachments/assets/1ae530bb-abee-462c-bc88-ed8c436eacdc)
+
+![Screenshot from 2024-11-16 16-42-50](https://github.com/user-attachments/assets/ab05e2bc-849e-4041-979a-48b19315285b)
+
+
+
 ![Screenshot from 2024-11-15 00-54-44](https://github.com/user-attachments/assets/d81d6450-842c-417a-b3c0-73e7a7a2f2e1)
 ![Screenshot from 2024-11-15 00-55-25](https://github.com/user-attachments/assets/d6fa82e0-3003-4614-b4c8-c4efe27bc9f3)
 ![Screenshot from 2024-11-15 00-56-11](https://github.com/user-attachments/assets/370cc54d-af5d-42d3-bd96-ee137a6d9eb0)
