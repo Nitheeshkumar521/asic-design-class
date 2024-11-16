@@ -3604,11 +3604,49 @@ Screenshots of command run
 ![Screenshot from 2024-11-14 05-09-05](https://github.com/user-attachments/assets/85fc2ad3-46b1-4f74-ae72-74df6a3f4f19)
 ![Screenshot from 2024-11-14 05-09-25](https://github.com/user-attachments/assets/00b39eb8-a610-4eb5-8714-7499ec94d34b)
 
+
+Since we are facing unexpected un-explainable error while using `run_floorplan` command, we can instead use the following set of commands available based on information from `Desktop/work/tools/openlane_working_dir/openlane/scripts/tcl_commands/floorplan.tcl` and also based on `Floorplan Commands` section in `Desktop/work/tools/openlane_working_dir/openlane/docs/source/OpenLANE_commands.md`
+
+```tcl
+# Follwing commands are alltogather sourced in "run_floorplan" command
+init_floorplan
+place_io
+tap_decap_or
+```
+
+Screenshots of commands run
+
 ![Screenshot from 2024-11-14 05-10-36](https://github.com/user-attachments/assets/b878472e-746f-4993-b108-a45c5731570e)
 ![Screenshot from 2024-11-14 05-10-48](https://github.com/user-attachments/assets/3eb10c13-4c39-4a25-98e4-f2f55a8bf3d2)
+
+Now that floorplan is done we can do placement using following command
+
+```tcl
+# Now we are ready to run placement
+run_placement
+```
+
+Screenshots of command run
+
+
 ![Screenshot from 2024-11-14 05-12-51](https://github.com/user-attachments/assets/f7fb3aa7-2e63-4a69-9e23-1f5a06e858b3)
 ![Screenshot from 2024-11-14 05-13-50](https://github.com/user-attachments/assets/d69f4524-bcbe-4ed1-8081-7b71870176b4)
+
+
+
+
+Commands to load placement def in magic in another terminal
+
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
 ![Screenshot from 2024-11-14 05-17-07](https://github.com/user-attachments/assets/905a6a41-e998-4988-a4e5-2cf8f46c777a)
+
+Screenshot of placement def in magic
 ![Screenshot from 2024-11-14 05-17-42](https://github.com/user-attachments/assets/f5ac581c-ca64-4955-a30f-e86293f8898d)
 
 
