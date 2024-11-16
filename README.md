@@ -3264,7 +3264,8 @@ drc why
 
 
 ![Screenshot from 2024-11-14 02-15-49](https://github.com/user-attachments/assets/e1bb2bd7-746b-47b6-a81a-9dfa183c8dca)
-![Screenshot 2024-11-16 120601](https://github.com/user-attachments/assets/b6f25c57-f63d-4a17-aaa4-a7e2ab4ba75a)
+
+![Untitled design](https://github.com/user-attachments/assets/600e8601-1f79-4af6-8b14-23a467b0afd7)
 
 ![Screenshot from 2024-11-14 02-38-08](https://github.com/user-attachments/assets/3207aede-b99a-4beb-be1e-fff1219751f0)
 
