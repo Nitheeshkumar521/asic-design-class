@@ -3571,17 +3571,34 @@ Noting down current design values generated before modifying parameters to impro
 ![Screenshot from 2024-11-14 04-40-20](https://github.com/user-attachments/assets/86b53e61-dd36-4745-b455-47590da1ceaa)
 
 
+
+Screenshot of merged.lef in `tmp` directory with our custom inverter as macro
 ![Screenshot from 2024-11-16 14-53-58](https://github.com/user-attachments/assets/135692fd-239f-4a46-9c3a-547f08dd2f32)
 
 
+
+
+Screenshots of commands run
 
 
 ![Screenshot from 2024-11-14 04-44-39](https://github.com/user-attachments/assets/2248d5f0-7e42-4b99-8a8a-93678b2dbbb0)
 ![Screenshot from 2024-11-14 04-59-19](https://github.com/user-attachments/assets/cb66804d-813b-4171-9a34-4cfe5183d14e)
 ![Screenshot from 2024-11-14 04-59-37](https://github.com/user-attachments/assets/da282f95-6669-4130-967d-0bc759f6c3ca)
 ![Screenshot from 2024-11-14 04-59-52](https://github.com/user-attachments/assets/4375d1ee-35e4-445b-a4f0-b60706742c11)
-![Screenshot from 2024-11-14 05-04-41](https://github.com/user-attachments/assets/756f8530-5f71-49f6-bb3a-48b5d6725850)
+
 ![Screenshot from 2024-11-14 05-05-13](https://github.com/user-attachments/assets/2c324100-8492-40ea-bcad-f3138c373701)
+
+
+####  Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.
+
+Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command
+
+```tcl
+# Now we can run floorplan
+run_floorplan
+```
+
+Screenshots of command run
 ![Screenshot from 2024-11-14 05-05-34](https://github.com/user-attachments/assets/9a4f06a8-93f5-45f5-8bbd-18cd6b5adc94)
 ![Screenshot from 2024-11-14 05-06-45](https://github.com/user-attachments/assets/2d6efe00-0255-4ac1-90f4-0ced279f9b8a)
 ![Screenshot from 2024-11-14 05-09-05](https://github.com/user-attachments/assets/85fc2ad3-46b1-4f74-ae72-74df6a3f4f19)
