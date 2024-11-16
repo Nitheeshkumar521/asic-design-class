@@ -2943,6 +2943,17 @@ Screenshots of floorplan def in magic
 ![day2-9](https://github.com/user-attachments/assets/20341778-ae10-490b-b573-43421bc41bce)
 ![day2-10](https://github.com/user-attachments/assets/120d37e4-e5e5-4be3-b174-e8662cf4bc87)
 ![day2-11](https://github.com/user-attachments/assets/66443128-0691-480a-94a7-3a7ed769a1e9)
+
+#### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+
+Command to run placement
+
+```tcl
+# Congestion aware placement by default
+run_placement
+```
+
+Screenshots of placement run
 ![day2-13](https://github.com/user-attachments/assets/9d837eb9-cab6-4015-837a-69f01376b004)
 ![day2-14](https://github.com/user-attachments/assets/4504ae40-2ba8-40bc-9f1d-5513cf10598d)
 ![day2-15](https://github.com/user-attachments/assets/0126dec4-9746-42bb-be0f-eae526cd8fc8)
