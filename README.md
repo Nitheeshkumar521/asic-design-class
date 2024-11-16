@@ -3921,6 +3921,22 @@ Screenshot of commands run
 ![Screenshot from 2024-11-15 02-45-56](https://github.com/user-attachments/assets/457a08ce-4912-4e7c-8759-c880525a54a7)
 
 
+Commands to write verilog
+
+```tcl
+# Check syntax
+help write_verilog
+
+# Overwriting current synthesis netlist
+write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+
+# Exit from OpenSTA since timing analysis is done
+exit
+```
+
+Screenshot of commands run
+
+
 
 ![Screenshot from 2024-11-15 02-50-52](https://github.com/user-attachments/assets/6ff1438e-ff75-4f28-a419-0188311e777d)
 ![Screenshot from 2024-11-15 02-55-33](https://github.com/user-attachments/assets/da2c9fc3-1235-456a-8c1c-976916a16643)
