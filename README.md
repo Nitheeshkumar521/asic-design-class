@@ -2958,13 +2958,80 @@ Screenshots of placement run
 
 ![day2-13](https://github.com/user-attachments/assets/9d837eb9-cab6-4015-837a-69f01376b004)
 ![day2-14](https://github.com/user-attachments/assets/4504ae40-2ba8-40bc-9f1d-5513cf10598d)
+#### 5. Load generated placement def in magic tool and explore the placement.
+
+Commands to load placement def in magic in another terminal
+
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+
+Screenshots of floorplan def in magic
+
 ![day2-15](https://github.com/user-attachments/assets/0126dec4-9746-42bb-be0f-eae526cd8fc8)
 ![day2-16](https://github.com/user-attachments/assets/24ac93bc-90de-4919-883a-1e25aed74771)
 ![day2-17](https://github.com/user-attachments/assets/25832a3d-9f1d-465a-b6a9-b4076765ccc3)
 
+Commands to exit from current run
+
+```tcl
+# Exit from OpenLANE flow
+exit
+
+# Exit from OpenLANE flow docker sub-system
+exit
+```
 
 
-## DAY 3: Design library cell using Magic Layout and ngspice characterization:
+
+## SECTION3: Design library cell using Magic Layout and ngspice characterization:
+
+### Theory
+
+### Implementation
+
+* Section 3 tasks:-
+1. Clone custom inverter standard cell design from github repository: [Standard cell design and characterization using OpenLANE flow](https://github.com/nickson-jose/vsdstdcelldesign).
+2. Load the custom inverter layout in magic and explore.
+3. Spice extraction of inverter in magic.
+4. Editing the spice model file for analysis through simulation.
+5. Post-layout ngspice simulations.
+6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
+
+* Section 3 - Tasks 1 to 5 files, reports and logs can be found in the following folder:
+
+[Section 3 - Tasks 1 to 5 \(vsdstdcelldesign\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign)
+
+* Section 3 - Task 6 files, reports and logs can be found in the following folder:
+
+[Section 3 - Task 6 \(drc_tests\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/drc_tests)
+
+#### 1. Clone custom inverter standard cell design from github repository
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Clone the repository with custom inverter design
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+# Change into repository directory
+cd vsdstdcelldesign
+
+# Copy magic tech file to the repo directory for easy access
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+
+# Check contents whether everything is present
+ls
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+
 ![day3-1](https://github.com/user-attachments/assets/812a1add-f96d-4f97-a702-b1d17ec77fc2)
 ![day3-2](https://github.com/user-attachments/assets/3469b927-de33-4fdc-9b54-3448a7152455)
 
@@ -2974,6 +3041,25 @@ Screenshots of placement run
 ![day3-6](https://github.com/user-attachments/assets/7af7c7c9-ba94-4ee5-bf9e-885e074f1f67)
 ![day3-7](https://github.com/user-attachments/assets/601747c4-760a-47d7-bab5-132bae5bd6dc)
 ![Screenshot from 2024-11-13 23-10-19](https://github.com/user-attachments/assets/4bfd1358-467f-45f8-9e05-4de204ebd7d4)
+
+#### 3. Spice extraction of inverter in magic.
+
+Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
+
+```tcl
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+
 ![Screenshot from 2024-11-13 23-24-22](https://github.com/user-attachments/assets/83f3ac1d-4073-40f6-b425-80357790df7a)
 
 ![Screenshot from 2024-11-13 23-26-51](https://github.com/user-attachments/assets/de934246-a409-42da-9c14-b7f590d68994)
@@ -2981,6 +3067,18 @@ Screenshots of placement run
 
 ![Screenshot from 2024-11-13 23-35-16](https://github.com/user-attachments/assets/d9beb774-946d-4e76-bd19-ca444304c0d2)
 ![Screenshot from 2024-11-13 23-39-38](https://github.com/user-attachments/assets/e1c5aa34-f2c9-4d8c-b6ce-70db2c05bb5d)
+
+The above screenshots shows 
+Screenshot of custom inverter layout in magic
+NMOS and PMOS identified
+Output Y connectivity to PMOS and NMOS drain verified
+PMOS source connectivity to VDD (here VPWR) verified
+NMOS source connectivity to VSS (here VGND) verified
+Deleting necessary layout part to see DRC error
+Screenshot of tkcon window after running above commands
+Screenshot of created spice file
+
+
 ![Screenshot from 2024-11-13 23-43-16](https://github.com/user-attachments/assets/2314bdb2-8b91-40c0-af96-0bdd766eeed7)
 ![Screenshot from 2024-11-13 23-44-35](https://github.com/user-attachments/assets/756711f9-a6cb-420e-8890-27f1e066832b)
 ![Screenshot from 2024-11-14 00-30-23](https://github.com/user-attachments/assets/e2bfcba3-46f6-4b6d-8b74-61cc214b5795)
