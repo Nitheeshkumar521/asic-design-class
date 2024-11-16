@@ -3709,6 +3709,17 @@ Commands run final screenshot
 
 ![Screenshot from 2024-11-16 17-21-50](https://github.com/user-attachments/assets/1ce42ac1-5ca4-422a-a390-7edfddcc8b1d)
 
+Commands to run STA in another terminal
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Command to invoke OpenSTA tool with script
+sta pre_sta.conf
+```
+
+Screenshots of commands run
 
 
 ![Screenshot from 2024-11-15 02-03-05](https://github.com/user-attachments/assets/dda23789-f1f8-4f93-a873-d0eaabef63db)
@@ -3718,6 +3729,34 @@ Commands run final screenshot
 ![Screenshot from 2024-11-15 02-03-41](https://github.com/user-attachments/assets/8876830e-8fa6-4f4f-aa32-56621ec9de96)
 ![Screenshot from 2024-11-15 02-03-43](https://github.com/user-attachments/assets/8510fedd-a7b8-47fa-a8c0-314d1156b1cc)
 ![Screenshot from 2024-11-15 02-03-46](https://github.com/user-attachments/assets/1104eb02-7469-4c1f-abc9-0fe637ccc58e)
+
+
+
+Since more fanout is causing more delay we can add parameter to reduce fanout and do synthesis again
+
+Commands to include new lef and perform synthesis 
+
+```tcl
+# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a -tag 25-03_18-52 -overwrite
+
+# Adiitional commands to include newly added lef to openlane flow
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Command to set new value for SYNTH_MAX_FANOUT
+set ::env(SYNTH_MAX_FANOUT) 4
+
+# Command to display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+echo $::env(SYNTH_DRIVING_CELL)
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+```
+
 ![Screenshot from 2024-11-15 02-18-18](https://github.com/user-attachments/assets/772e3117-6d1e-49db-9eaf-1351ea8a2df2)
 ![Screenshot from 2024-11-15 02-18-49](https://github.com/user-attachments/assets/4e2638c7-febb-40dc-945e-566b5a8e983e)
 
@@ -3725,6 +3764,21 @@ Commands run final screenshot
 
 ![Screenshot from 2024-11-15 02-20-25](https://github.com/user-attachments/assets/5bde631d-dd56-4e03-b5f0-e14e082715ce)
 ![Screenshot from 2024-11-15 02-21-35](https://github.com/user-attachments/assets/dffe7974-45d5-4d05-9309-34bf4b1494db)
+
+
+Commands to run STA in another terminal
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Command to invoke OpenSTA tool with script
+sta pre_sta.conf
+```
+
+Screenshots of commands run
+
+
 ![Screenshot from 2024-11-15 02-23-03](https://github.com/user-attachments/assets/fc320623-4e28-43ca-82aa-17ebc7751d82)
 ![Screenshot from 2024-11-15 02-23-10](https://github.com/user-attachments/assets/f84f1697-67f8-438b-bcf9-01778a141e90)
 ![Screenshot from 2024-11-15 02-23-14](https://github.com/user-attachments/assets/ce7166b8-5c09-4c47-bc45-93a020097ce2)
@@ -3732,7 +3786,31 @@ Commands run final screenshot
 ![Screenshot from 2024-11-15 02-23-22](https://github.com/user-attachments/assets/09484819-4e0a-473d-b688-8d1dcab6c619)
 ![Screenshot from 2024-11-15 02-23-25](https://github.com/user-attachments/assets/af000f04-ea2f-4edd-8bd1-05bd08e0a75d)
 ![Screenshot from 2024-11-15 02-23-27](https://github.com/user-attachments/assets/a0b20368-c03f-47ff-92b1-0bb1eaa3b654)
+
+####  Make timing ECO fixes to remove all violations.
+
+OR gate of drive strength 2 is driving 4 fanouts
+
 ![Screenshot from 2024-11-15 02-28-05](https://github.com/user-attachments/assets/ed91f2c7-6158-4706-b560-bb1e48317e1f)
+
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11672_
+
+# Checking command syntax
+help replace_cell
+
+# Replacing cell
+replace_cell _14510_ sky130_fd_sc_hd__or3_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
 ![Screenshot from 2024-11-15 02-29-28](https://github.com/user-attachments/assets/c8dc21d2-c095-4802-8d7a-da1969e64e8d)
 ![Screenshot from 2024-11-15 02-30-40](https://github.com/user-attachments/assets/8b9ad150-f2da-4d11-9cf1-00cc972430bb)
 ![Screenshot from 2024-11-15 02-31-12](https://github.com/user-attachments/assets/d6e30556-4e5d-402c-9b2d-0608e459d7ff)
