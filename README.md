@@ -3939,7 +3939,53 @@ Screenshot of commands run
 
 
 ![Screenshot from 2024-11-15 02-50-52](https://github.com/user-attachments/assets/6ff1438e-ff75-4f28-a419-0188311e777d)
+
+
+
+
+
+
 ![Screenshot from 2024-11-15 02-55-33](https://github.com/user-attachments/assets/da2c9fc3-1235-456a-8c1c-976916a16643)
+
+
+Since we confirmed that netlist is replaced and will be loaded in PnR but since we want to follow up on the earlier 0 violation design we are continuing with the clean design to further stages
+
+Commands load the design and run necessary stages
+
+```tcl
+# Now once again we have to prep design so as to update variables
+prep -design picorv32a -tag 24-03_10-03 -overwrite
+
+# Addiitional commands to include newly added lef to openlane flow merged.lef
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+# Command to set new value for SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+
+# Follwing commands are alltogather sourced in "run_floorplan" command
+init_floorplan
+place_io
+tap_decap_or
+
+# Now we are ready to run placement
+run_placement
+
+# Incase getting error
+unset ::env(LIB_CTS)
+
+# With placement done we are now ready to run CTS
+run_cts
+```
+
+Screenshots of commands run
+
 
 ![Screenshot from 2024-11-15 02-58-29](https://github.com/user-attachments/assets/778c35dd-d51d-4e91-a636-f2a1e58793b7)
 ![Screenshot from 2024-11-15 03-00-45](https://github.com/user-attachments/assets/c0d0c104-2249-47aa-9c54-c6606ac717d8)
