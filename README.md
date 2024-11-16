@@ -4290,6 +4290,68 @@ Screenshots of routed def
 ![Screenshot from 2024-11-15 05-02-23](https://github.com/user-attachments/assets/2b613ffa-fe8b-4df0-8be7-af415ce99ecf)
 ![Screenshot from 2024-11-15 05-02-48](https://github.com/user-attachments/assets/b0ea8457-a90b-4414-becb-da72dc5623a2)
 ![Screenshot from 2024-11-15 05-04-05](https://github.com/user-attachments/assets/2ba4801c-f8fe-468d-b591-365e61dacf56)
+
+
+#### 3. Post-Route parasitic extraction using SPEF extractor.
+
+Commands for SPEF extraction using external tool
+
+```bash
+# Change directory
+cd Desktop/work/tools/SPEF_EXTRACTOR
+
+# Command extract spef
+python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+```
+
+#### 4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
+
+Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrated OpenSTA in OpenROAD
+
+```tcl
+# Command to run OpenROAD tool
+openroad
+
+# Reading lef file
+read_lef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef
+
+# Reading def file
+read_def /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+
+# Creating an OpenROAD database to work with
+write_db pico_route.db
+
+# Loading the created database in OpenROAD
+read_db pico_route.db
+
+# Read netlist post CTS
+read_verilog /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/synthesis/picorv32a.synthesis_preroute.v
+
+# Read library for design
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+# Link design and library
+link_design picorv32a
+
+# Read in the custom sdc we created
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+# Setting all cloks as propagated clocks
+set_propagated_clock [all_clocks]
+
+# Read SPEF
+read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef
+
+# Generating custom timing report
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+# Exit to OpenLANE flow
+exit
+```
+
+Screenshots of commands run and timing report generated
+
+
 ![Screenshot from 2024-11-15 05-11-29](https://github.com/user-attachments/assets/6537edf0-32c8-4589-8310-484688a03921)
 ![Screenshot from 2024-11-15 05-13-23](https://github.com/user-attachments/assets/2ef22bf1-6d4b-4d12-bb44-95e2df8d2f48)
 ![Screenshot from 2024-11-15 05-16-20](https://github.com/user-attachments/assets/8feecd43-4d63-4122-ab19-4d0c5e488ce1)
