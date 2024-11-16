@@ -2954,6 +2954,8 @@ run_placement
 ```
 
 Screenshots of placement run
+![Screenshot from 2024-11-16 10-48-45](https://github.com/user-attachments/assets/2eb43986-9557-41e9-95cb-577f1cd38f62)
+
 ![day2-13](https://github.com/user-attachments/assets/9d837eb9-cab6-4015-837a-69f01376b004)
 ![day2-14](https://github.com/user-attachments/assets/4504ae40-2ba8-40bc-9f1d-5513cf10598d)
 ![day2-15](https://github.com/user-attachments/assets/0126dec4-9746-42bb-be0f-eae526cd8fc8)
