@@ -3033,6 +3033,9 @@ magic -T sky130A.tech sky130_inv.mag &
 ```
 
 ![day3-1](https://github.com/user-attachments/assets/812a1add-f96d-4f97-a702-b1d17ec77fc2)
+####  Load the custom inverter layout in magic and explore.
+Screenshot of custom inverter layout in magic
+
 ![day3-2](https://github.com/user-attachments/assets/3469b927-de33-4fdc-9b54-3448a7152455)
 
 ![day3-3](https://github.com/user-attachments/assets/5b85b280-9249-4611-85ee-6b0d25827247)
