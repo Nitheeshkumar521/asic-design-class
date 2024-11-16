@@ -3266,6 +3266,15 @@ drc why
 ![Screenshot from 2024-11-14 02-15-49](https://github.com/user-attachments/assets/e1bb2bd7-746b-47b6-a81a-9dfa183c8dca)
 ![Screenshot 2024-11-16 133501](https://github.com/user-attachments/assets/f747fb25-63ac-40f4-8e74-732650171d4e)
 
+#### Incorrectly implemented difftap.2 simple rule correction
+
+Screenshot of difftap rules
+
+
+![Screenshot 2024-11-16 134503](https://github.com/user-attachments/assets/dd26b299-2222-435b-9a72-ad09cf0dc20d)
+Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u
+
+
 
 
 
@@ -3273,9 +3282,27 @@ drc why
 
 
 ![Screenshot from 2024-11-14 02-38-08](https://github.com/user-attachments/assets/3207aede-b99a-4beb-be1e-fff1219751f0)
+New commands inserted in sky130A.tech file to update drc
 
 ![Screenshot from 2024-11-14 02-39-45](https://github.com/user-attachments/assets/00b1af7a-814d-4d0b-aec6-82ae1119fd51)
+
+
+Commands to run in tkcon window
+
+```tcl
+# Loading updated tech file
+tech load sky130A.tech
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+
 ![Screenshot from 2024-11-14 02-48-34](https://github.com/user-attachments/assets/63c590f4-0d3c-44ba-a5a2-6c941cd7e853)
+![image](https://github.com/user-attachments/assets/de2c61de-bb13-4df5-9642-f2f727ffd49c)
+
 
 ![Screenshot from 2024-11-14 02-51-04](https://github.com/user-attachments/assets/d3c57be3-3655-4696-9e3a-c04cedd89023)
 ![Screenshot from 2024-11-14 02-52-26](https://github.com/user-attachments/assets/df90bea1-465c-4b07-8efa-d152805bb735)
