@@ -2648,7 +2648,6 @@ Expand or Collapse
 
 * In any embedded board we have seen, the part of the board we consider as the chip is only the ***PACKAGE*** of the chip which is nothing but a protective layer or packet bound over the actual chip and the actual manufatured chip is usually present at the center of a package wherein, the connections from package is fed to the chip by ***WIRE BOUND*** method which is none other than basic wired connection.
 
-![image](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7562205a-7435-46c7-a66e-de1626911f14)
 ![image](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7005a9e3-79da-4590-bea0-eb3768127a3d)
 ![image](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/70b1c678-2a2e-484f-9181-812dbcd5f0a3)
 
@@ -2828,15 +2827,115 @@ exit
 ![Screenshot from 2024-11-15 05-56-15](https://github.com/user-attachments/assets/a7c52520-bab3-4b99-adac-4b4b5c28c5a3)
 ![Screenshot from 2024-11-15 06-11-22](https://github.com/user-attachments/assets/6321117b-302b-4a24-9907-9c6b2a8219b9)
 ![day1-3](https://github.com/user-attachments/assets/18c965ff-52b0-4170-aeff-2967b6f98bff)
+
+#### 2. Calculate the flop ratio.
+
+Screenshots of synthesis statistics report file highlighted
+
 ![day1-4](https://github.com/user-attachments/assets/6f84ae73-bcef-46b9-b351-b6f78a1c917a)
 
 ![day1-5](https://github.com/user-attachments/assets/449a9a73-61de-4039-b917-0b7ef8ee9f63)
 
+Calculation of Flop Ratio and DFF % from synthesis statistics report file
+
+```math
+Flop\ Ratio = \frac{1613}{14876} = 0.108429685
+```
+```math
+Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
+```
+
 ## DAY2:Good floorplan vs bad floorplan and introduction to library cells:
+### Theory
+
+### Implementation
+
+Section 2 tasks:- 
+1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+2. Calculate the die area in microns from the values in floorplan def.
+3. Load generated floorplan def in magic tool and explore the floorplan.
+4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+5. Load generated placement def in magic tool and explore the placement.
+
+```math
+Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
+```
+
+
+#### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+
+Commands to invoke the OpenLANE flow and perform floorplan
+
+```bash
+# Change directory to openlane flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+# Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command
+docker
+```
+```tcl
+# Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command
+./flow.tcl -interactive
+
+# Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow
+package require openlane 0.9
+
+# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+
+# Now we can run floorplan
+run_floorplan
+```
+Screenshot of floor plan:
 
 ![day2-1](https://github.com/user-attachments/assets/64bd4fa8-4cc2-49a7-94ad-434717f37ad3)
 ![day2-3](https://github.com/user-attachments/assets/c6dc5725-c942-4deb-a10b-447f8cc6bece)
+#### 2. Calculate the die area in microns from the values in floorplan def.
+
+Screenshot of contents of floorplan def
+
 ![day2-4](https://github.com/user-attachments/assets/380a25eb-b01e-406a-80e7-77aab207434e)
+According to floorplan def
+```math
+1000\ Unit\ Distance = 1\ Micron
+```
+```math
+Die\ width\ in\ unit\ distance = 660685 - 0 = 660685
+```
+```math
+Die\ height\ in\ unit\ distance = 671405 - 0 = 671405
+```
+```math
+Distance\ in\ microns = \frac{Value\ in\ Unit\ Distance}{1000}
+```
+```math
+Die\ width\ in\ microns = \frac{660685}{1000} = 660.685\ Microns
+```
+```math
+Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
+```
+```math
+Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212425\ Square\ Microns
+```
+
+#### 3. Load generated floorplan def in magic tool and explore the floorplan.
+
+Commands to load floorplan def in magic in another terminal
+
+```bash
+# Change directory to path containing generated floorplan def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/floorplan/
+
+# Command to load the floorplan def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+
+Screenshots of floorplan def in magic
+
 ![day2-5](https://github.com/user-attachments/assets/5285d33a-f6f8-4de8-a8b1-ffce9fa40a50)
 ![day2-6](https://github.com/user-attachments/assets/a7e4703b-4733-4599-ad6c-de3d94b87042)
 ![day2-7](https://github.com/user-attachments/assets/9ecb9a74-33bd-4655-a1e4-de96e6225b23)
