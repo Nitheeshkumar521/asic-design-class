@@ -3571,6 +3571,11 @@ Noting down current design values generated before modifying parameters to impro
 ![Screenshot from 2024-11-14 04-40-20](https://github.com/user-attachments/assets/86b53e61-dd36-4745-b455-47590da1ceaa)
 
 
+![Screenshot from 2024-11-16 14-53-58](https://github.com/user-attachments/assets/135692fd-239f-4a46-9c3a-547f08dd2f32)
+
+
+
+
 ![Screenshot from 2024-11-14 04-44-39](https://github.com/user-attachments/assets/2248d5f0-7e42-4b99-8a8a-93678b2dbbb0)
 ![Screenshot from 2024-11-14 04-59-19](https://github.com/user-attachments/assets/cb66804d-813b-4171-9a34-4cfe5183d14e)
 ![Screenshot from 2024-11-14 04-59-37](https://github.com/user-attachments/assets/da282f95-6669-4130-967d-0bc759f6c3ca)
