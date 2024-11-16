@@ -3561,9 +3561,16 @@ Screenshots of commands run
 ![Screenshot from 2024-11-14 04-37-56](https://github.com/user-attachments/assets/9d11bfdd-3d0c-4ace-9100-4ed1ba9a9afa)
 ![Screenshot from 2024-11-14 04-38-18](https://github.com/user-attachments/assets/686737af-8eef-498a-928e-914487e92efa)
 ![Screenshot from 2024-11-14 04-38-49](https://github.com/user-attachments/assets/ac8d0d92-d01f-41ca-aa11-1932ab78490a)
+
+
+####  Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.
+
+Noting down current design values generated before modifying parameters to improve timing
 ![Screenshot from 2024-11-14 04-40-08](https://github.com/user-attachments/assets/9ea6e431-c891-4a6c-9cbe-522b1a89e7f7)
 
 ![Screenshot from 2024-11-14 04-40-20](https://github.com/user-attachments/assets/86b53e61-dd36-4745-b455-47590da1ceaa)
+
+
 ![Screenshot from 2024-11-14 04-44-39](https://github.com/user-attachments/assets/2248d5f0-7e42-4b99-8a8a-93678b2dbbb0)
 ![Screenshot from 2024-11-14 04-59-19](https://github.com/user-attachments/assets/cb66804d-813b-4171-9a34-4cfe5183d14e)
 ![Screenshot from 2024-11-14 04-59-37](https://github.com/user-attachments/assets/da282f95-6669-4130-967d-0bc759f6c3ca)
