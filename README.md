@@ -3865,11 +3865,62 @@ Result - slack reduced
 ![Screenshot from 2024-11-15 02-36-58](https://github.com/user-attachments/assets/b5ec8a7a-02bf-4266-94d5-97da8097ccc7)
 ![Screenshot from 2024-11-15 02-38-05](https://github.com/user-attachments/assets/179ef2a6-21fd-43d3-bce5-a657a9bf087f)
 
+Commands to verify instance `_14506_`  is replaced with `sky130_fd_sc_hd__or4_4`
+
+```tcl
+# Generating custom timing report
+report_checks -from _29043_ -to _30440_ -through _14506_
+```
+
+Screenshot of replaced instance
+
+
 ![Screenshot from 2024-11-15 02-39-12](https://github.com/user-attachments/assets/ac588e98-d9e9-44f5-b4b0-400a8f4dc7fc)
 ![Screenshot from 2024-11-15 02-39-42](https://github.com/user-attachments/assets/b4d3f924-0abc-4cb0-a2b3-36c714c0b4d6)
+
+
+
+Commands to verify instance `_14506_`  is replaced with `sky130_fd_sc_hd__or4_4`
+
+```tcl
+# Generating custom timing report
+report_checks -from _29043_ -to _30440_ -through _14506_
+```
+
+Screenshot of replaced instance
 ![Screenshot from 2024-11-15 02-41-41](https://github.com/user-attachments/assets/78f24827-f52a-463c-b01b-836059af78b1)
 ![Screenshot from 2024-11-15 02-42-02](https://github.com/user-attachments/assets/cb738f13-5d9d-4d69-b1c1-e78fd58bcd2a)
+
+
+![Screenshot from 2024-03-26 10-43-04](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/970b3cb7-fe10-4b5e-99c9-85059714f8f2)
+
+*We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation*
+
+#### 11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.
+
+Now to insert this updated netlist to PnR flow and we can use `write_verilog` and overwrite the synthesis netlist but before that we are going to make a copy of the old old netlist
+
+Commands to make copy of netlist
+
+```bash
+# Change from home directory to synthesis results directory
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/
+
+# List contents of the directory
+ls
+
+# Copy and rename the netlist
+cp picorv32a.synthesis.v picorv32a.synthesis_old.v
+
+# List contents of the directory
+ls
+```
+
+Screenshot of commands run
+
 ![Screenshot from 2024-11-15 02-45-56](https://github.com/user-attachments/assets/457a08ce-4912-4e7c-8759-c880525a54a7)
+
+
 
 ![Screenshot from 2024-11-15 02-50-52](https://github.com/user-attachments/assets/6ff1438e-ff75-4f28-a419-0188311e777d)
 ![Screenshot from 2024-11-15 02-55-33](https://github.com/user-attachments/assets/da2c9fc3-1235-456a-8c1c-976916a16643)
