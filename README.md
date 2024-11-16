@@ -3071,15 +3071,15 @@ ext2spice
 ![Screenshot from 2024-11-13 23-35-16](https://github.com/user-attachments/assets/d9beb774-946d-4e76-bd19-ca444304c0d2)
 ![Screenshot from 2024-11-13 23-39-38](https://github.com/user-attachments/assets/e1c5aa34-f2c9-4d8c-b6ce-70db2c05bb5d)
 
-The above screenshots shows 
-Screenshot of custom inverter layout in magic
-NMOS and PMOS identified
-Output Y connectivity to PMOS and NMOS drain verified
-PMOS source connectivity to VDD (here VPWR) verified
-NMOS source connectivity to VSS (here VGND) verified
-Deleting necessary layout part to see DRC error
-Screenshot of tkcon window after running above commands
-Screenshot of created spice file
+##### The above screenshots shows 
+##### Screenshot of custom inverter layout in magic
+##### NMOS and PMOS identified
+##### Output Y connectivity to PMOS and NMOS drain verified
+##### PMOS source connectivity to VDD (here VPWR) verified
+##### NMOS source connectivity to VSS (here VGND) verified
+##### Deleting necessary layout part to see DRC error
+##### Screenshot of tkcon window after running above commands
+##### Screenshot of created spice file
 
 
 ![Screenshot from 2024-11-13 23-43-16](https://github.com/user-attachments/assets/2314bdb2-8b91-40c0-af96-0bdd766eeed7)
