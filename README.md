@@ -3815,7 +3815,25 @@ Result - slack reduced
 ![Screenshot from 2024-11-15 02-30-40](https://github.com/user-attachments/assets/8b9ad150-f2da-4d11-9cf1-00cc972430bb)
 ![Screenshot from 2024-11-15 02-31-12](https://github.com/user-attachments/assets/d6e30556-4e5d-402c-9b2d-0608e459d7ff)
 ![Screenshot from 2024-11-15 02-31-40](https://github.com/user-attachments/assets/7b0357fd-d4d8-4e32-b076-20c0ef251409)
+
+OR gate of drive strength 2 is driving 4 fanouts
 ![Screenshot from 2024-11-15 02-32-14](https://github.com/user-attachments/assets/f0b406ae-05b4-44d8-8fbf-aa244c45e69d)
+
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11675_
+
+# Replacing cell
+replace_cell _14514_ sky130_fd_sc_hd__or3_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
 
 
 ![Screenshot from 2024-11-15 02-33-34](https://github.com/user-attachments/assets/c0dcd6ac-bbec-4ff0-8c49-bf84b354304c)
@@ -3825,6 +3843,23 @@ Result - slack reduced
 ![Screenshot from 2024-11-15 02-35-10](https://github.com/user-attachments/assets/1b0d40fe-e477-4cf0-b354-938c2e693332)
 
 ![Screenshot from 2024-11-15 02-35-21](https://github.com/user-attachments/assets/b75cfa7d-8324-48d6-ac26-56c51a3e1a9f)
+
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11643_
+
+# Replacing cell
+replace_cell _14481_ sky130_fd_sc_hd__or4_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
+
 
 ![Screenshot from 2024-11-15 02-36-29](https://github.com/user-attachments/assets/00f67f10-ec8a-47db-a1e1-3b18055d1e37)
 ![Screenshot from 2024-11-15 02-36-58](https://github.com/user-attachments/assets/b5ec8a7a-02bf-4266-94d5-97da8097ccc7)
