@@ -3706,6 +3706,11 @@ Commands run final screenshot
 ![Screenshot from 2024-11-15 00-56-11](https://github.com/user-attachments/assets/370cc54d-af5d-42d3-bd96-ee137a6d9eb0)
 ![Screenshot from 2024-11-15 00-57-38](https://github.com/user-attachments/assets/b3520e16-bb74-4cf6-9852-8db7861628ae)
 ![Screenshot from 2024-11-15 01-08-21](https://github.com/user-attachments/assets/44fdf8ab-7731-4681-842e-a933fb4d8d0e)
+
+![Screenshot from 2024-11-16 17-21-50](https://github.com/user-attachments/assets/1ce42ac1-5ca4-422a-a390-7edfddcc8b1d)
+
+
+
 ![Screenshot from 2024-11-15 02-03-05](https://github.com/user-attachments/assets/dda23789-f1f8-4f93-a873-d0eaabef63db)
 ![Screenshot from 2024-11-15 02-03-17](https://github.com/user-attachments/assets/715902b4-59c5-4c1e-82bf-1377c397ff16)
 ![Screenshot from 2024-11-15 02-03-32](https://github.com/user-attachments/assets/cdceb522-4fdd-429d-9efb-9fa9d43cabc4)
