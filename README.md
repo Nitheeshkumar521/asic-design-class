@@ -2856,8 +2856,7 @@ Screenshot of custom inverter layout in magic
 #### 3. Spice extraction of inverter in magic.
 
 Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
-
-```tcl
+```
 # Check current directory
 pwd
 
@@ -2870,6 +2869,7 @@ ext2spice cthresh 0 rthresh 0
 # Converting to ext to spice
 ext2spice
 ```
+Screenshots of above commands
 
 ![Screenshot from 2024-11-13 23-24-22](https://github.com/user-attachments/assets/83f3ac1d-4073-40f6-b425-80357790df7a)
 
@@ -2889,19 +2889,16 @@ ext2spice
 ##### Screenshot of tkcon window after running above commands
 ##### Screenshot of created spice file
 
-####  Post-layout ngspice simulations.
+####  Post-layout ngspice simulation:
 
 Commands for ngspice simulation
-
-```bash
+```
 # Command to directly load spice file for simulation to ngspice
-ngspice sky130_inv.spice
+ngspice sky130_karinv.spice
 
-# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+#  we have entered ngspice with the simulation spice file loaded we just have to load the plot
 plot y vs time a
 ```
-
-Screenshots of ngspice run
 
 
 ![Screenshot from 2024-11-13 23-43-16](https://github.com/user-attachments/assets/2314bdb2-8b91-40c0-af96-0bdd766eeed7)
@@ -2911,16 +2908,11 @@ Screenshot of generated plot
 ![Screenshot from 2024-11-14 00-33-47](https://github.com/user-attachments/assets/498144bb-ea24-4b69-9d32-f4a49c09c3b4)
 
 Rise transition time calculation
+* Rise transition time calculation Rise Transition Time = Time taken for output to rise to 80% − Time taken for output to rise to 20%
+* 20% of output (3.3V) = 0.66V
+* 80% of output (3.3V) = 2.64V
 
-```math
-Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ taken\ for\ output\ to\ rise\ to\ 20\%
-```
-```math
-20\%\ of\ output = 660\ mV
-```
-```math
-80\%\ of\ output = 2.64\ V
-```
+
 
 20% Screenshots
 ![Screenshot from 2024-11-14 00-35-47](https://github.com/user-attachments/assets/1525c458-d009-473d-89d9-28bccd8ee974)
@@ -2935,17 +2927,14 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 Rise\ transition\ time = 2.24638 - 2.18242 = 0.06396\ ns = 63.96\ ps
 ```
 
+
+
+
 Fall transition time calculation
 
-```math
-Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ taken\ for\ output\ to\ fall\ to\ 80\%
-```
-```math
-20\%\ of\ output = 660\ mV
-```
-```math
-80\%\ of\ output = 2.64\ V
-```
+* Fall Transition Time = Time taken for output to fall to 80% − Time taken for output to fall to 20% 
+* 20% of the output (3.3V) = 0.66V
+* 80% of the output (3.3V) = 2.64V
 
 20% Screenshots
 ![Screenshot from 2024-11-14 00-49-50](https://github.com/user-attachments/assets/5015c7dc-b8a6-4af9-86b6-8c803da80079)
@@ -2960,18 +2949,12 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 ![Screenshot from 2024-11-14 01-00-46](https://github.com/user-attachments/assets/9fcd3410-29bc-48fc-9b5a-2da5b1a25210)
 ![Screenshot from 2024-11-14 01-01-11](https://github.com/user-attachments/assets/199653c2-7573-4a56-bbbe-4b8890d98422)
 
-```math
-Fall\ transition\ time = 4.0955 - 4.0536 = 0.0419\ ns = 41.9\ ps
-```
+**Fall Transition Time = 4.0935ns - 4.0505ns = 0.043ns or 43ps**
 
-Rise Cell Delay Calculation
+* Rise Cell Delay
+Calculation Rise cell delay = Time taken by output to rise to 50% − Time taken by input to fall to 50% 
+* 50 % of the output (3.3V) = 1.65V
 
-```math
-Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ for\ input\ to\ fall\ to\ 50\%
-```
-```math
-50\%\ of\ 3.3\ V = 1.65\ V
-```
 
 50% Screenshots
 
@@ -2980,35 +2963,26 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 ![Screenshot from 2024-11-14 01-08-26](https://github.com/user-attachments/assets/0e23ff26-ff64-4cba-9c18-a9d485d58582)
 
 
-```math
-Rise\ Cell\ Delay = 2.21144 - 2.15008 = 0.06136\ ns = 61.36\ ps
-```
+**Rise Cell Delay = 2.2066ns - 2.1487ns = 0.0579 or 57.9ps**
 
-Fall Cell Delay Calculation
-
-```math
-Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ for\ input\ to\ rise\ to\ 50\%
-```
-```math
-50\%\ of\ 3.3\ V = 1.65\ V
-```
+* Fall Cell Delay
+Calculation Fall cell delay = Time taken by output to fall to 50% − Time taken by input to rise to 50% 
+* 50 % of the output (3.3V) = 1.65V
 
 50% Screenshots
 
 ![Screenshot from 2024-11-14 01-12-57](https://github.com/user-attachments/assets/878f0910-8336-4753-90e5-2326d638ad05)
 ![Screenshot from 2024-11-14 01-13-14](https://github.com/user-attachments/assets/b446df8c-055a-4c22-9394-44df493ec0fd)
 
-```math
-Fall\ Cell\ Delay = 4.07 - 4.05 = 0.02\ ns = 20\ ps
-```
+**Fall Cell Delay = 4.0751ns - 4.0498ns = 0.0253ns or 25.3ps**
+
 
 ####  Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
 
 Link to Sky130 Periphery rules: [https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html)
 
 Commands to download and view the corrupted skywater process magic tech file and associated files to perform drc corrections
-
-```bash
+```
 # Change to home directory
 cd
 
@@ -3057,9 +3031,8 @@ New commands inserted in sky130A.tech file to update drc
 ![Screenshot from 2024-11-14 01-49-36](https://github.com/user-attachments/assets/e4436d80-2311-470a-9fe5-5744125bcceb)
 
 Commands to run in tkcon window
-
-```tcl
-# Loading updated tech file
+```
+# Load updated tech file
 tech load sky130A.tech
 
 # Must re-run drc check to see updated drc errors
@@ -3068,8 +3041,6 @@ drc check
 # Selecting region displaying the new errors and getting the error messages 
 drc why
 ```
-
-
 
 ![Screenshot from 2024-11-14 02-15-49](https://github.com/user-attachments/assets/e1bb2bd7-746b-47b6-a81a-9dfa183c8dca)
 
@@ -3095,10 +3066,8 @@ New commands inserted in sky130A.tech file to update drc
 
 ![Screenshot from 2024-11-14 02-39-45](https://github.com/user-attachments/assets/00b1af7a-814d-4d0b-aec6-82ae1119fd51)
 
-
 Commands to run in tkcon window
-
-```tcl
+```
 # Loading updated tech file
 tech load sky130A.tech
 
@@ -3129,7 +3098,7 @@ New commands inserted in sky130A.tech file to update drc
 Commands to run in tkcon window
 
 ```tcl
-# Loading updated tech file
+# Load updated tech file
 tech load sky130A.tech
 
 # Change drc style to drc full
