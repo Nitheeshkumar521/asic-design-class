@@ -3264,7 +3264,7 @@ drc why
 
 
 ![Screenshot from 2024-11-14 02-15-49](https://github.com/user-attachments/assets/e1bb2bd7-746b-47b6-a81a-9dfa183c8dca)
-![Screenshot 2024-11-16 133501](https://github.com/user-attachments/assets/f747fb25-63ac-40f4-8e74-732650171d4e)
+
 
 #### Incorrectly implemented difftap.2 simple rule correction
 
@@ -3302,7 +3302,7 @@ drc why
 ```
 
 ![Screenshot from 2024-11-14 02-48-34](https://github.com/user-attachments/assets/63c590f4-0d3c-44ba-a5a2-6c941cd7e853)
-![image](https://github.com/user-attachments/assets/de2c61de-bb13-4df5-9642-f2f727ffd49c)
+
 
 
 Incorrectly implemented nwell.4 complex rule correction
@@ -3337,10 +3337,10 @@ drc why
 
 
 ![Screenshot from 2024-11-14 03-03-59](https://github.com/user-attachments/assets/e90469f8-47b4-458d-a7ea-926816bc40d6)
-![image](https://github.com/user-attachments/assets/6ae46224-df22-4b8c-b3ae-49bf4bdab794)
 
 
-## SECTION 4: Pre-layout timing analysis and importance of good clock tree:
+
+## DAY 4: Pre-layout timing analysis and importance of good clock tree:
 
 ### Theory
 
