@@ -3416,7 +3416,7 @@ Screenshot of placement def in magic
 
 
 Screenshot of custom inverter inserted in placement def with proper abutment
-![Screenshot 2024-11-15 042212](https://github.com/user-attachments/assets/6861825b-f770-47d2-96e0-0aa9f26e6898)
+
 
 ![Screenshot from 2024-11-14 06-06-43](https://github.com/user-attachments/assets/94a5d427-89f0-4595-a115-701ee6fff0f4)
 
