@@ -4082,3 +4082,82 @@ Screenshots of commands run and timing report generated
 ![Screenshot from 2024-11-15 05-16-20](https://github.com/user-attachments/assets/8feecd43-4d63-4122-ab19-4d0c5e488ce1)
 ![Screenshot from 2024-11-15 05-16-49](https://github.com/user-attachments/assets/c7aebb12-8da9-4d09-aba5-63010e91d810)
 
+
+# Lab14: RTL to GDSII flow for the RVMYTH RISC-V core and VSDBabySoC
+## OpenROAD & Flow controllers:
+### Overview of OpenROAD and Flow Controllers
+OpenROAD is a sophisticated tool designed for integrated chip physical design, facilitating the transition from Register Transfer Level (RTL) to GDSII. It encompasses a wide range of processes including synthesis, floorplanning, placement, routing, signoff parasitic extraction, and timing analysis.
+
+The tool employs a hierarchical placement algorithm with the primary goal of minimizing wire length, while also offering features aimed at optimizing both timing and power consumption. OpenROAD’s architecture is designed to be flexible and extensible, allowing users to incorporate their own algorithms and features as needed.
+### Flow Controllers in OpenROAD
+The OpenROAD project includes two principal flow controllers:
+### 1)OpenROAD Flow Scripts (ORFS):
+ORFS is an open-source flow controller that streamlines the automated design process for digital ASICs, guiding the design from synthesis to layout. This flow controller offers a fully automated RTL-to-GDSII design process, encompassing various stages such as Synthesis, Placement and Routing (PnR), Static Timing Analysis (STA), Design Rule Check (DRC), and Layout Versus Schematic (LVS) checks.
+The main objective of ORFS is to provide a customizable and flexible environment for digital ASIC design, enabling users to select and integrate different tools according to their specific requirements.
+Within the ORFS framework, OpenROAD functions as a plugin during the physical design phase. This integration allows for extensive configuration and customization to align with project-specific needs. The OpenROAD plugin offers advanced capabilities, including hierarchical placement, global routing, and detailed routing optimization.
+ORFS is compatible with various public and private Process Design Kits (PDKs), with available public PDKs including GF180, Skywater130, and ASAP7.
+### 2)OpenLane:
+OpenLane represents a fully automated RTL-to-GDSII design flow, akin to ORFS, and is developed by Efabless specifically for the Skywater130 Multi-Project Wafer (MPW) Program.
+
+ ## process of ORFS:
+ ### Steps for Configuring and Using OpenROAD Flow Scripts (ORFS)
+ ### Setup and Configuration:
+ After installing ORFS, the first step is to tailor the framework according to your project’s requirements. This involves defining various design parameters, including the target technology node, design constraints, and specific tool configurations.
+
+ ### Design Entry Methods:
+ ORFS accommodates multiple design entry methods. Users can input their designs in various formats, with Verilog being one of the supported options.
+
+ ### Synthesis Process:
+ The synthesis phase is critical as it converts the RTL design into a gate-level netlist. ORFS provides access to a range of open-source synthesis tools, including Yosys and ABC, which are suitable for this conversion.
+
+ ### Floorplanning:
+ During the floorplanning phase, the arrangement of design modules within the chip’s area is established. ORFS offers several tools for this task, including RePlAce and Capo.
+
+ ### Placement:
+ The placement stage focuses on determining the precise locations of each gate or cell within the chip. OpenROAD is one of the placement tools integrated into ORFS for this purpose.
+
+ ### Routing:
+ In the routing phase, connections between gates and cells are created using metal wires, completing the circuit design. ORFS includes routing tools like FastRoute and TritonRoute to assist in this process.
+
+ ### Layout Verification:
+ Following routing, the design undergoes layout verification to ensure correctness. Tools such as Magic, which are part of the ORFS suite, are utilized for this verification.
+
+ ### GDSII File Generation:
+ After successful verification, the final step is to generate the GDSII layout file. This is accomplished using ORFS tools like Magic and KLayout, which facilitate the creation of the final output for manufacturing.
+
+
+
+
+
+## Installing of OpenRoad Flow Script:
+Following link is to install ORFS with tools 
+```https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/user/BuildLocally.md```
+
+commands for installing ORFS:
+```
+git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
+cd OpenROAD-flow-scripts
+sudo ./setup.sh
+./build_openroad.sh --local
+```
+Executing flow of gcd  for nangate45 pdk
+Installing yosys and openroad
+
+![Screenshot from 2024-11-26 01-01-18](https://github.com/user-attachments/assets/4bf40c51-b6ee-44f2-8913-a6d81c7f9801)
+
+flowrun verification
+```
+make gui_final
+```
+
+
+![Screenshot from 2024-11-26 01-08-33](https://github.com/user-attachments/assets/0583cf94-a7fa-43fe-b3da-db6740760153)
+
+
+![img2](https://github.com/user-attachments/assets/ccba40dc-dc14-443f-afe2-467436d9bd9c)
+
+
+
+
+
+
