@@ -4937,3 +4937,21 @@ Fanout     Cap    Slew   Delay    Time   Description
 
 
 
+
+
+
+![Screenshot from 2024-11-26 03-14-48](https://github.com/user-attachments/assets/84338cea-175b-481f-b803-62538792aff8)
+
+
+
+
+
+![Screenshot from 2024-11-26 03-15-26](https://github.com/user-attachments/assets/35b27675-94ac-4dfe-94ae-8581442f5239)
+
+
+
+
+
+
+
+
