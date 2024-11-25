@@ -4193,7 +4193,7 @@ export REMOVE_ABC_BUFFERS = 1
 constraints file
 ```
 set_units -time ns
-set PERIOD 10.35
+set PERIOD 9.55
 create_clock [get_ports {clk}] -name clk -period $PERIOD
 set_clock_uncertainty [expr 0.05 * $PERIOD] -setup [get_clocks clk]
 set_clock_uncertainty [expr 0.08 * $PERIOD] -hold [get_clocks clk]
@@ -4588,7 +4588,37 @@ screenshots execution of  flow by make command
 
 
 
-### 
+### CLOCK TREE:
+
+
+
+![Screenshot from 2024-11-26 02-54-37](https://github.com/user-attachments/assets/0804d49e-e628-4603-8426-e650a1b016f6)
+
+
+### IR DROP:
+
+![Screenshot from 2024-11-26 02-54-45](https://github.com/user-attachments/assets/1b352c41-0793-4c1e-be69-6bf651f5ed71)
+
+
+
+### Final PlACEMENT:
+
+![Screenshot from 2024-11-26 02-54-53](https://github.com/user-attachments/assets/b4275b05-1d52-4132-ab52-c6993edf9445)
+
+
+
+### FINAL ROUTING:
+
+
+![Screenshot from 2024-11-26 02-55-02](https://github.com/user-attachments/assets/9c3e8b55-466d-4742-8671-a345eef8f6f8)
+
+
+
+### QOR Report:
+
+
+![Screenshot from 2024-11-26 00-34-50](https://github.com/user-attachments/assets/4ce7f408-a8a0-4a95-8ad2-f34bf04076ea)
+
 
 
 
