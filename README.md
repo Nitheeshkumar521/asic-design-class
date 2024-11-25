@@ -4333,14 +4333,23 @@ screenshots of execution of flow by command make:
 
 ### Clock tree:
 
+![Screenshot from 2024-11-26 02-30-12](https://github.com/user-attachments/assets/58b6be9b-a078-4968-a97b-cdc6bc25da4b)
+
+
 
 ### IR DROP:
+
+![Screenshot from 2024-11-26 02-30-47](https://github.com/user-attachments/assets/7475db94-4aa5-4f55-9f77-18782b34ed75)
+
+### Final placement:
+![Screenshot from 2024-11-26 02-31-50](https://github.com/user-attachments/assets/f5db25c0-28d4-4d42-81c6-5ab03cb46ed5)
 
 
 
 ### Final Routing:
 
 
+![Screenshot from 2024-11-26 02-33-21](https://github.com/user-attachments/assets/4372f18d-fd34-470c-9e84-f4e795f5bb42)
 
 
 QOR RESULTS:
