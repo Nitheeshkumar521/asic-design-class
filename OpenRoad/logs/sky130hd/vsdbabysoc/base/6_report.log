@@ -1,0 +1,61 @@
+OpenROAD v2.0-17013-gf7f634f88 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/nitheesh-kumar/ORFS/OpenROAD-flow-scripts/flow/platforms/sky130hd/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation vsdbabysoc (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 31890 rc segments
+[INFO RCX-0439] Coupling Cap extraction vsdbabysoc ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 7% of 121030 wires extracted
+[INFO RCX-0442] 21% of 121030 wires extracted
+[INFO RCX-0442] 70% of 121030 wires extracted
+[INFO RCX-0442] 99% of 121030 wires extracted
+[INFO RCX-0045] Extract 8539 nets, 40363 rsegs, 40363 caps, 91589 ccs
+[INFO RCX-0443] 8539 nets finished
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 1.80e+00 V
+Worstcase voltage: 1.80e+00 V
+Average voltage  : 1.80e+00 V
+Average IR drop  : 2.95e-05 V
+Worstcase IR drop: 7.13e-04 V
+Percentage drop  : 0.04 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 7.81e-04 V
+Average voltage  : 2.80e-05 V
+Average IR drop  : 2.80e-05 V
+Worstcase IR drop: 7.81e-04 V
+Percentage drop  : 0.04 %
+######################################
+Cell type report:                       Count       Area
+  Macro                                     2  662104.35
+  Antenna cell                             71     177.67
+  Clock buffer                            201    4033.87
+  Timing Repair Buffer                   1844   19452.41
+  Inverter                                110     472.95
+  Clock inverter                           42     377.86
+  Sequential cell                        1274   25819.76
+  Multi-Input combinational cell         5031   32777.69
+  Total                                  8575  745216.56
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 775102 u^2 32% utilization.
+[WARNING GUI-0076] Could not find the Qt platform plugin "wayland" in ""
+Elapsed time: 0:22.09[h:]min:sec. CPU time: user 21.55 sys 0.47 (99%). Peak memory: 1020600KB.

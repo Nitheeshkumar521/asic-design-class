@@ -4936,7 +4936,7 @@ Fanout     Cap    Slew   Delay    Time   Description
 
 
 
-
+Heatmaps for RISC-V core and VSDBabySoC
 
 
 
@@ -4950,8 +4950,4 @@ Fanout     Cap    Slew   Delay    Time   Description
 
 
 
-
-
-
-
-
+**Note:** All reports, results and logs for ORFS have been uploaded [here](OpenRoad)

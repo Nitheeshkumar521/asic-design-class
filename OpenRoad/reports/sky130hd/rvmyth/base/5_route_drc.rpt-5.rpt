@@ -1,0 +1,33 @@
+violation type: Short
+	srcs: net:_00547_ net:_04281_
+	bbox = (160.8800, 107.5550) - (161.0200, 107.6950) on Layer met1
+violation type: Short
+	srcs: net:_00547_ net:_04281_
+	bbox = (160.8800, 107.5550) - (161.0200, 107.6800) on Layer met1
+violation type: Short
+	srcs: net:CPU_Xreg_value_a4\[15\]\[12\] net:_04281_
+	bbox = (162.0800, 89.6300) - (162.2200, 89.7700) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.1050, 90.8800) - (162.2450, 91.0200) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.1050, 90.7900) - (162.2450, 91.0200) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.1050, 90.8800) - (162.2200, 91.0200) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.1050, 90.7900) - (162.2200, 91.1100) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.0800, 90.8800) - (162.2200, 91.0200) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.0800, 90.8800) - (162.2200, 91.1100) on Layer met2
+violation type: Short
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.0800, 90.8800) - (162.2450, 91.0200) on Layer met2
+violation type: Metal Spacing
+	srcs: net:clknet_leaf_111_clk net:_04281_
+	bbox = (162.1050, 90.6800) - (162.2800, 90.7900) on Layer met2
